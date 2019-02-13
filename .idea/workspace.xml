@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="707d4204-c512-4790-9874-6ca4d54c19a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/def/test/defObject/EBOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/test/defObject/EBOM.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1781174041">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/def/test/defObject/EBOM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="HTML File" />
+        <option value="XSLT Stylesheet" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/blacklake/test/unit/testUnit.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/request/RequestObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/manufacture/test/materialLot.java" />
+        <option value="$PROJECT_DIR$/src/test/java/manufacture/test/materialLot/materialLot.java" />
+        <option value="$PROJECT_DIR$/src/test/java/manufacture/test/dataParams/materialParams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/manufacture/test/manufactureRequest/RequestObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/manufacture/test/materialLot/testMaterialLot.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/material/testMaterila.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/material/testMateral.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/UnitParams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/materialParams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/unit/testUnit.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/material/createMaterial.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/material/materialMethod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/testJson.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/readExcel.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/testExcel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/unit/createUnit.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/unit/unitMethod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/material/testMaterial.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/eBOMParams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/eBOM/testEBOM.java" />
+        <option value="$PROJECT_DIR$/src/test/java/commonMethod/ExcelReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/CommonMethod/ExcelReader.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/material/TestMaterial.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/eBOM/TestEBOM1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defObject/Ebom.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/material/MaterialMethod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/eBOMParamsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defObject/RawMaterial.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defRequest/RequestObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/utils/MaterialMethod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/MaterialParams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/eBOM/TestEBOM.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/EBOMParams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/area/TestArea.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestArea.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/StoreHouseParams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/WarehouseParams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestWarehouse.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/utils/WarehouseMethod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestStorage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestStorage2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestStorage1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/StorageParams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/utils/StorageMethod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/unit/TestUnit.java" />
+        <option value="$PROJECT_DIR$/src/test/java/def/test/defObject/EBOM.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="defObject" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550055679917" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.TestStorage2.testStorage2Post">
+    <configuration name="Unnamed" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="StorageParams.createWarehouse" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="apiTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="def.test.defDataParams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="def.test.defDataParams" />
+      <option name="MAIN_CLASS_NAME" value="def.test.defDataParams.StorageParams" />
+      <option name="METHOD_NAME" value="createWarehouse" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStorage1.testStoragelPost" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="apiTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="def.test.warehouse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="def.test.warehouse" />
+      <option name="MAIN_CLASS_NAME" value="def.test.warehouse.TestStorage1" />
+      <option name="METHOD_NAME" value="testStoragelPost" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStorage2.testStorage2Post" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="apiTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="def.test.warehouse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="def.test.warehouse" />
+      <option name="MAIN_CLASS_NAME" value="def.test.warehouse.TestStorage2" />
+      <option name="METHOD_NAME" value="testStorage2Post" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestWarehouse" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="apiTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="def.test.warehouse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="def.test.warehouse" />
+      <option name="MAIN_CLASS_NAME" value="def.test.warehouse.TestWarehouse" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WarehouseMethod.createwarehouse" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="apiTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="def.test.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="def.test.utils" />
+      <option name="MAIN_CLASS_NAME" value="def.test.utils.WarehouseMethod" />
+      <option name="METHOD_NAME" value="createwarehouse" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.Unnamed" />
+      <item itemvalue="TestNG.TestWarehouse" />
+      <item itemvalue="TestNG.TestStorage1.testStoragelPost" />
+      <item itemvalue="TestNG.WarehouseMethod.createwarehouse" />
+      <item itemvalue="TestNG.StorageParams.createWarehouse" />
+      <item itemvalue="TestNG.TestStorage2.testStorage2Post" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestStorage2.testStorage2Post" />
+        <item itemvalue="TestNG.TestStorage1.testStoragelPost" />
+        <item itemvalue="TestNG.StorageParams.createWarehouse" />
+        <item itemvalue="TestNG.WarehouseMethod.createwarehouse" />
+        <item itemvalue="TestNG.TestWarehouse" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="707d4204-c512-4790-9874-6ca4d54c19a7" name="Default Changelist" comment="" />
+      <created>1544680656620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544680656620</updated>
+      <workItem from="1544680662583" duration="2274000" />
+      <workItem from="1544684466767" duration="141000" />
+      <workItem from="1544684719604" duration="18300000" />
+      <workItem from="1545208230369" duration="7746000" />
+      <workItem from="1545475441031" duration="53000" />
+      <workItem from="1545475603371" duration="22000" />
+      <workItem from="1545822084247" duration="1738000" />
+      <workItem from="1545824606846" duration="49254000" />
+      <workItem from="1547351570129" duration="8000" />
+      <workItem from="1547532663152" duration="6824000" />
+      <workItem from="1547548916177" duration="4651000" />
+      <workItem from="1547694082393" duration="6189000" />
+      <workItem from="1547961612727" duration="730000" />
+      <workItem from="1548036646814" duration="591000" />
+      <workItem from="1548826688283" duration="17000" />
+      <workItem from="1548826735900" duration="4277000" />
+      <workItem from="1549880994633" duration="12976000" />
+      <workItem from="1550055852684" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestStorage_testStoragelPost - 2019.02.13 at 14h 20m 52s.xml">
+      <configuration name="TestStorage.testStoragelPost" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestStorage_testStoragelPost - 2019.02.13 at 14h 21m 12s.xml">
+      <configuration name="TestStorage.testStoragelPost" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestStorage_testStoragelPost - 2019.02.13 at 14h 21m 56s.xml">
+      <configuration name="TestStorage.testStoragelPost" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestStorage_testStoragelPost - 2019.02.13 at 14h 23m 32s.xml">
+      <configuration name="TestStorage.testStoragelPost" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestStorage2_testStorage2Post - 2019.02.13 at 14h 33m 37s.xml">
+      <configuration name="TestStorage2.testStorage2Post" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestStorage2_testStorage2Post - 2019.02.13 at 14h 34m 06s.xml">
+      <configuration name="TestStorage2.testStorage2Post" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestStorage2_testStorage2Post - 2019.02.13 at 14h 34m 37s.xml">
+      <configuration name="TestStorage2.testStorage2Post" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestStorage2_testStorage2Post - 2019.02.13 at 14h 35m 13s.xml">
+      <configuration name="TestStorage2.testStorage2Post" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestStorage2_testStorage2Post - 2019.02.13 at 14h 36m 01s.xml">
+      <configuration name="TestStorage2.testStorage2Post" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestStorage2_testStorage2Post - 2019.02.13 at 14h 37m 39s.xml">
+      <configuration name="TestStorage2.testStorage2Post" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="33000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20886981" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3987952" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.22420382" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32048193" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/def/test/defObject/EBOM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>apiTest</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

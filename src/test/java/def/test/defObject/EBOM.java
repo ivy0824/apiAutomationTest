@@ -18,6 +18,10 @@ public class EBOM {
         this.status = status;
         this.version = version;
         this.rawMaterialList = rawMaterialList;
+
+
+
+        
     }
 
     public String toString() {
