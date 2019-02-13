@@ -1,0 +1,91 @@
+package def.test.defRequest;
+
+import io.restassured.response.ValidatableResponse;
+import java.util.HashMap;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItem;
+
+public class RequestObject{
+
+    // 1. baseUrl
+    public static final String baseUrl = "http://def-feature.test.blacklake.tech/v1/";
+    public static final String orgId = "2";
+    public static final String userId = "16";
+
+
+    /**get请求方法
+     * @parampath
+     * @paramparams
+     */
+    public static ValidatableResponse testGet(String path,HashMap params){
+        return given()
+                .header("X-Org-Id",orgId)
+                .params(params)
+                .when().get(baseUrl + path)
+                .then()
+                .log().all();
+    }
+
+
+    /**
+     * post请求方法
+     * @param path
+     * @param body
+     * @param params
+     */
+    public static ValidatableResponse testPost(String path, Object body, HashMap params){
+
+        return given()
+                .contentType("application/json")
+                .header("X-Org-Id",orgId)
+                .header("X-User-Id",userId)
+                .body(body)
+                .params(params)
+                .when().post(baseUrl + path)
+                .then()
+                .log().all();
+    }
+
+
+    /**
+     * 判断返回状态是多少
+     * @param response
+     * @param statusCode
+     */
+    public static void getStatus(ValidatableResponse response, int statusCode){
+        response.statusCode(statusCode);
+    }
+
+
+
+    /**
+     * 判断返回响应体信息
+     * @param response
+     * @param jsonPath
+     * @param responseMessage  String
+     */
+    public static void getResponseMessage(ValidatableResponse response, String jsonPath, String responseMessage){
+        response.body(jsonPath, equalTo(responseMessage));
+    }
+
+    /**
+     * 判断返回响应体信息
+     * @param response
+     * @param jsonPath
+     * @param responseMessage  int
+     */
+    public static void getResponseMessage(ValidatableResponse response, String jsonPath, int responseMessage){
+        response.body(jsonPath, equalTo(responseMessage));
+    }
+
+    /**
+     * 判断返回响应体信息是否包含某些信息
+     * @param response
+     * @param jsonPath
+     * @param responseMessage
+     */
+    public static void getHasItem(ValidatableResponse response, String jsonPath, String responseMessage){
+        response.body(jsonPath, hasItem(responseMessage));
+    }
+}

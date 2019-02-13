@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="1" preserve-order="true" name="/Users/ivy/IdeaProjects/mavenDemo1">
+        <groups>
+        <dependencies>
+        <group name="group1" depends-on="">
+        <classes>
+            <!--<class name="def.test.unit.TestUnit">-->
+            <class name="def.test.material.TestMaterial">
+                <methods>
+                    <!--<include name="testMaterialPost1"></include>-->
+                    <!--<include name="testUnitGet"></include>-->
+                </methods>
+            </class>
+
+        </classes>
+        </group>
+        </dependencies>
+        </groups>
+    </test>
+</suite>
+
