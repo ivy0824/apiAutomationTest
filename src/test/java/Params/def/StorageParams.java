@@ -1,10 +1,8 @@
-package def.test.defDataParams;
+package defParams;
 
-import def.test.utils.StorageMethod;
-import def.test.utils.WarehouseMethod;
-import org.testng.annotations.BeforeClass;
+import utils.StorageMethod;
+import utils.WarehouseMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 public class StorageParams {
 

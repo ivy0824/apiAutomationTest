@@ -1,4 +1,4 @@
-package def.test.defObject;
+package defObject;
 
 public class RawMaterial {
     private String amount;

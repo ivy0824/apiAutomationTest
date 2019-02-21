@@ -1,7 +1,7 @@
 package def.test.unit;
 
-import def.test.defDataParams.UnitParams;
-import def.test.defRequest.RequestObject;
+import defParams.UnitParams;
+import defRequest.RequestObject;
 import org.testng.annotations.Test;
 
 

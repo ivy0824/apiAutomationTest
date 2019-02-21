@@ -1,8 +1,8 @@
 package def.test.eBOM;
 
-import def.test.defDataParams.EBOMParams;
-import def.test.defObject.EBOM;
-import def.test.defRequest.RequestObject;
+import defParams.EBOMParams;
+import defObject.EBOM;
+import defRequest.RequestObject;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;

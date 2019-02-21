@@ -1,4 +1,4 @@
-package def.test.defDataParams;
+package defParams;
 
 import org.testng.annotations.DataProvider;
 

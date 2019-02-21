@@ -1,10 +1,9 @@
-package def.test.defDataParams;
+package defParams;
 
-import def.test.defObject.RawMaterial;
+import defObject.RawMaterial;
 import org.testng.annotations.BeforeClass;
-import def.test.utils.MaterialMethod;
+import utils.MaterialMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 

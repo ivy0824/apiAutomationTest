@@ -1,4 +1,4 @@
-package def.test.defObject;
+package defObject;
 
 import java.util.ArrayList;
 
@@ -19,9 +19,6 @@ public class EBOM {
         this.version = version;
         this.rawMaterialList = rawMaterialList;
 
-
-
-        
     }
 
     public String toString() {

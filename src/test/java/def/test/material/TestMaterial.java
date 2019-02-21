@@ -1,11 +1,11 @@
 package def.test.material;
 
-import def.test.defDataParams.MaterialParams;
-import def.test.defRequest.RequestObject;
+import defParams.MaterialParams;
+import defRequest.RequestObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.util.HashMap;
-import def.test.utils.UnitMethod;
+import utils.UnitMethod;
 
 
 public class TestMaterial {
