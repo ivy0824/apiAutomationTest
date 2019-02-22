@@ -1,6 +1,6 @@
-package def.test.utils;
+package utils;
 
-import def.test.defRequest.RequestObject;
+import request.RequestObject;
 
 import java.util.HashMap;
 

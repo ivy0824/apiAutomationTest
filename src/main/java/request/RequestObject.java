@@ -1,5 +1,6 @@
-package def.test.defRequest;
+package defRequest;
 
+import config.Environment;
 import io.restassured.response.ValidatableResponse;
 import java.util.HashMap;
 import static io.restassured.RestAssured.given;
@@ -8,10 +9,10 @@ import static org.hamcrest.Matchers.hasItem;
 
 public class RequestObject{
 
-    // 1. baseUrl
-    public static final String baseUrl = "http://def-feature.test.blacklake.tech/v1/";
-    public static final String orgId = "2";
-    public static final String userId = "16";
+//     1. baseUrl
+    public static final String baseUrl = Environment.baseUrl;
+    public static final String orgId = Environment.orgId;
+    public static final String userId = Environment.userId;
 
 
     /**get请求方法
