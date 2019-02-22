@@ -26,7 +26,7 @@ public class TestStorage2 {
         body.put("parentCode", parentCode);
         body.put("level", level+"");
         HashMap<String, String> params = new HashMap<String, String>();
-        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"storage", body, params), statusCode);
+        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"/v1/storage", body, params), statusCode);
     }
 
 }

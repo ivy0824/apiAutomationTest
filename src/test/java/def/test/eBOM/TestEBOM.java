@@ -17,7 +17,7 @@ public class TestEBOM {
         System.out.println(eBOM.toString());
         HashMap<String, String> params = new HashMap<String, String>();
         System.out.println("----------" + msg + "----------");
-        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"ebom", eBOM, params), statusCode);
+        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"/v1/ebom", eBOM, params), statusCode);
     }
 
     @Test(dataProvider = "getEBOM1",dataProviderClass = EBOMParams.class)
@@ -25,7 +25,7 @@ public class TestEBOM {
         EBOM eBOM = new EBOM(productMaterialCode,productmaterialname,currentUnitId,status,version,rawMaterialList);
         HashMap<String, String> params = new HashMap<String, String>();
         System.out.println("----------" + msg + "----------");
-        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"ebom", eBOM, params), statusCode);
+        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"/v1/ebom", eBOM, params), statusCode);
     }
 
 }

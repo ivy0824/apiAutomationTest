@@ -56,7 +56,7 @@ public class TestMaterial {
         body.put("status", "1");
         body.put("unitId",unitId);
         HashMap<String, String> params = new HashMap<String, String>();
-        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"material", body, params),Integer.valueOf(statusCode).intValue());
+        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"/v1/material", body, params),Integer.valueOf(statusCode).intValue());
     }
 
 
@@ -76,7 +76,7 @@ public class TestMaterial {
         body.put("status", status+"");
         body.put("unitId",unitId);
         HashMap<String, String> params = new HashMap<String, String>();
-        RequestObject.getResponseMessage(RequestObject.testPost(Environment.server_def,"material", body, params), "data.status", status);
+        RequestObject.getResponseMessage(RequestObject.testPost(Environment.server_def,"/v1/material", body, params), "data.status", status);
     }
 
 }

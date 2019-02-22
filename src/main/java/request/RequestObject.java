@@ -10,6 +10,7 @@ import static org.hamcrest.Matchers.hasItem;
 public class RequestObject{
 
 //     1. baseUrl
+    public static final String url = Environment.url;
     public static final String orgId = Environment.orgId;
     public static final String userId = Environment.userId;
     public static final String userName = Environment.userName;
@@ -24,7 +25,7 @@ public class RequestObject{
         return given()
                 .header("X-Org-Id",orgId)
                 .params(params)
-                .when().get("http://"+server+"-feature.test.blacklake.tech" + path)
+                .when().get("http://"+server+url + path)
                 .then()
                 .log().all();
     }
@@ -45,7 +46,7 @@ public class RequestObject{
                 .header("X-User-Name",userName)
                 .body(body)
                 .params(params)
-                .when().post("http://"+server+"-feature.test.blacklake.tech" + path)
+                .when().post("http://"+server+url + path)
                 .then()
                 .log().all();
     }

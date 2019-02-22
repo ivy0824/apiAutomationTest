@@ -26,7 +26,7 @@ public class TestWarehouse {
         body.put("category", category+"");
         HashMap<String, String> params = new HashMap<String, String>();
         System.out.println(code);
-        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"warehouse", body, params), statusCode);
+        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"/v1/warehouse", body, params), statusCode);
     }
 
 
