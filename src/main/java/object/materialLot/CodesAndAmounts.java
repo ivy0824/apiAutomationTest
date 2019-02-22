@@ -1,25 +1,23 @@
 package object.materialLot;
 
-public class InventoryList {
+public class CodesAndAmounts {
     private String amount;
-    private String materialCode;
-    private String qcStatus;
+    private String code;
+    private String unit;
 
-
-
-    public codesAndAmounts(String amount, String materialCode, String qcStatus) {
+    public CodesAndAmounts(String amount, String code, String unit) {
         this.amount = amount;
-        this.materialCode = materialCode;
-        this.qcStatus = qcStatus;
-
+        this.code = code;
+        this.unit = unit;
     }
 
     public String toString() {
-        return "RawMaterial{" +
+        return "CodesAndAmounts{" +
                 "amount='" + amount + '\'' +
-                ", lossRate='" + materialCode + '\'' +
-                ",currentUnitId;" + qcStatus + '\''+
-
+                ",code='" + code + '\'' +
+                ",unit;" + unit + '\'' +
                 '}';
     }
 }
+
+

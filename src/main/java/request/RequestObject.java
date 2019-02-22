@@ -1,4 +1,4 @@
-package defRequest;
+package request;
 
 import config.Environment;
 import io.restassured.response.ValidatableResponse;
@@ -13,6 +13,8 @@ public class RequestObject{
     public static final String baseUrl = Environment.baseUrl;
     public static final String orgId = Environment.orgId;
     public static final String userId = Environment.userId;
+    public static final String userName = Environment.userName;
+
 
 
     /**get请求方法
@@ -41,6 +43,7 @@ public class RequestObject{
                 .contentType("application/json")
                 .header("X-Org-Id",orgId)
                 .header("X-User-Id",userId)
+                .header("X-User-Name",userName)
                 .body(body)
                 .params(params)
                 .when().post(baseUrl + path)

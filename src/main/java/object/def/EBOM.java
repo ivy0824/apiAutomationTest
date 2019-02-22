@@ -1,4 +1,4 @@
-package defObject;
+package object.def;
 
 import java.util.ArrayList;
 

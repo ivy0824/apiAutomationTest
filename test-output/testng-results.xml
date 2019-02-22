@@ -6,12 +6,12 @@
     <groups>
     </groups>
     <test name="/Users/ivy/IdeaProjects/mavenDemo1" duration-ms="3842" started-at="2018-12-29T02:25:45Z" finished-at="2018-12-29T02:25:49Z">
-      <class name="def.test.material.TestMaterial">
-        <test-method status="PASS" signature="getUnitID()[pri:0, instance:def.test.material.TestMaterial@3b6eb2ec]" name="getUnitID" is-config="true" duration-ms="2081" started-at="2018-12-29T02:25:45Z" finished-at="2018-12-29T02:25:47Z">
+      <class name="TestMaterial">
+        <test-method status="PASS" signature="getUnitID()[pri:0, instance:TestMaterial@3b6eb2ec]" name="getUnitID" is-config="true" duration-ms="2081" started-at="2018-12-29T02:25:45Z" finished-at="2018-12-29T02:25:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUnitID -->
-        <test-method status="PASS" signature="testMateral(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.test.material.TestMaterial@3b6eb2ec]" name="testMateral" duration-ms="250" started-at="2018-12-29T02:25:47Z" data-provider="getMaterial" finished-at="2018-12-29T02:25:48Z">
+        <test-method status="PASS" signature="testMateral(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:TestMaterial@3b6eb2ec]" name="testMateral" duration-ms="250" started-at="2018-12-29T02:25:47Z" data-provider="getMaterial" finished-at="2018-12-29T02:25:48Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMateral -->
-        <test-method status="PASS" signature="testMateral(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.test.material.TestMaterial@3b6eb2ec]" name="testMateral" duration-ms="277" started-at="2018-12-29T02:25:48Z" data-provider="getMaterial" finished-at="2018-12-29T02:25:48Z">
+        <test-method status="PASS" signature="testMateral(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:TestMaterial@3b6eb2ec]" name="testMateral" duration-ms="277" started-at="2018-12-29T02:25:48Z" data-provider="getMaterial" finished-at="2018-12-29T02:25:48Z">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMateral -->
-        <test-method status="PASS" signature="testMateral(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.test.material.TestMaterial@3b6eb2ec]" name="testMateral" duration-ms="340" started-at="2018-12-29T02:25:48Z" data-provider="getMaterial" finished-at="2018-12-29T02:25:48Z">
+        <test-method status="PASS" signature="testMateral(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:TestMaterial@3b6eb2ec]" name="testMateral" duration-ms="340" started-at="2018-12-29T02:25:48Z" data-provider="getMaterial" finished-at="2018-12-29T02:25:48Z">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMateral -->
-        <test-method status="PASS" signature="testMateral(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.test.material.TestMaterial@3b6eb2ec]" name="testMateral" duration-ms="246" started-at="2018-12-29T02:25:48Z" data-provider="getMaterial" finished-at="2018-12-29T02:25:48Z">
+        <test-method status="PASS" signature="testMateral(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:TestMaterial@3b6eb2ec]" name="testMateral" duration-ms="246" started-at="2018-12-29T02:25:48Z" data-provider="getMaterial" finished-at="2018-12-29T02:25:48Z">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMateral -->
-        <test-method status="PASS" signature="testMaterialStatus(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.test.material.TestMaterial@3b6eb2ec]" name="testMaterialStatus" duration-ms="366" started-at="2018-12-29T02:25:48Z" data-provider="getMaterialStatus" finished-at="2018-12-29T02:25:49Z">
+        <test-method status="PASS" signature="testMaterialStatus(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:TestMaterial@3b6eb2ec]" name="testMaterialStatus" duration-ms="366" started-at="2018-12-29T02:25:48Z" data-provider="getMaterialStatus" finished-at="2018-12-29T02:25:49Z">
           <params>
             <param index="0">
               <value>
@@ -141,7 +141,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMaterialStatus -->
-        <test-method status="PASS" signature="testMaterialStatus(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.test.material.TestMaterial@3b6eb2ec]" name="testMaterialStatus" duration-ms="260" started-at="2018-12-29T02:25:49Z" data-provider="getMaterialStatus" finished-at="2018-12-29T02:25:49Z">
+        <test-method status="PASS" signature="testMaterialStatus(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:TestMaterial@3b6eb2ec]" name="testMaterialStatus" duration-ms="260" started-at="2018-12-29T02:25:49Z" data-provider="getMaterialStatus" finished-at="2018-12-29T02:25:49Z">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMaterialStatus -->
-      </class> <!-- def.test.material.TestMaterial -->
+      </class> <!-- TestMaterial -->
     </test> <!-- /Users/ivy/IdeaProjects/mavenDemo1 -->
   </suite> <!-- All Test Suite -->
 </testng-results>

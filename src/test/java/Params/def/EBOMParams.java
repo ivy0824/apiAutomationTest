@@ -1,8 +1,8 @@
-package defParams;
+package Params.def;
 
-import defObject.RawMaterial;
+import object.def.RawMaterial;
 import org.testng.annotations.BeforeClass;
-import utils.MaterialMethod;
+import utils.def.MaterialMethod;
 import org.testng.annotations.DataProvider;
 
 import java.util.ArrayList;
@@ -53,7 +53,7 @@ public class EBOMParams {
 
         String version = (int) (Math.random() * 10000) + "";
         return new Object[][]{
-                {"1000003","1000003",1,1,version+"1",rawMaterialList,400,"创建版本号为空的物料清单"},
+                {"1000003","1000003",1,1,"",rawMaterialList,400,"创建版本号为空的物料清单"},
                 {"1000003","1000003",1,1,version+"2",rawMaterialList,200,"创建有效的物料清单"},
                 {"1000003","1000003",1,1,version+"2",rawMaterialList,400,"创建版本号重复的物料清单"},
 

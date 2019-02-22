@@ -1,7 +1,7 @@
-package defParams;
+package Params.def;
 
 import org.testng.annotations.DataProvider;
-import utils.ExcelReader;
+import utils.common.ExcelReader;
 
 import java.util.List;
 

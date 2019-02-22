@@ -6,8 +6,8 @@
         <dependencies>
         <group name="group1" depends-on="">
         <classes>
-            <!--<class name="def.test.unit.TestUnit">-->
-            <class name="def.test.material.TestMaterial">
+            <!--<class name="TestUnit">-->
+            <class name="TestMaterial">
                 <methods>
                     <!--<include name="testMaterialPost1"></include>-->
                     <!--<include name="testUnitGet"></include>-->

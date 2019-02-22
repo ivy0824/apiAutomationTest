@@ -1,7 +1,7 @@
 package def.test.warehouse;
 
-import defParams.StorageParams;
-import defRequest.RequestObject;
+import Params.def.StorageParams;
+import request.RequestObject;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;

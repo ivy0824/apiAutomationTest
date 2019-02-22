@@ -1,7 +1,7 @@
-package defParams;
+package Params.def;
 
-import utils.StorageMethod;
-import utils.WarehouseMethod;
+import utils.def.StorageMethod;
+import utils.def.WarehouseMethod;
 import org.testng.annotations.DataProvider;
 
 public class StorageParams {
