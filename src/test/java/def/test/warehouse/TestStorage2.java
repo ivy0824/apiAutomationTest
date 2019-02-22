@@ -1,6 +1,7 @@
 package def.test.warehouse;
 
 import Params.def.StorageParams;
+import config.Environment;
 import request.RequestObject;
 import org.testng.annotations.Test;
 
@@ -25,7 +26,7 @@ public class TestStorage2 {
         body.put("parentCode", parentCode);
         body.put("level", level+"");
         HashMap<String, String> params = new HashMap<String, String>();
-        RequestObject.getStatus(RequestObject.testPost("storage", body, params), statusCode);
+        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"storage", body, params), statusCode);
     }
 
 }

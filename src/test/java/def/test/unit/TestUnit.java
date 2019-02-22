@@ -1,6 +1,7 @@
 package def.test.unit;
 
 import Params.def.UnitParams;
+import config.Environment;
 import request.RequestObject;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ public class TestUnit {
         body.put("name",name);
         body.put("desc",des);
         HashMap<String,String> params=new HashMap<String, String>();
-        RequestObject.getStatus(RequestObject.testPost("unit",body,params),statusCode);
+        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"unit",body,params),statusCode);
 
     }
 
@@ -24,7 +25,7 @@ public class TestUnit {
     public void testUnitGet(){
         HashMap<String,String> params=new HashMap<String, String>();
 //        RequestObject.getStatus(RequestObject.testGet("unit",params),200);
-        RequestObject.getResponseMessage(RequestObject.testGet("unit",params),"data.name", "单位8248");
+        RequestObject.getResponseMessage(RequestObject.testGet(Environment.server_def,"unit",params),"data.name", "单位8248");
     }
 
 }

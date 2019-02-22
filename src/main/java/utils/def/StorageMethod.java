@@ -1,5 +1,6 @@
 package utils.def;
 
+import config.Environment;
 import request.RequestObject;
 
 import java.util.HashMap;
@@ -13,7 +14,7 @@ public class StorageMethod {
         body.put("parentCode", parentCode);
         body.put("level", level+"");
         HashMap<String, String> params = new HashMap<String, String>();
-        RequestObject.testPost("storage", body, params);
+        RequestObject.testPost(Environment.server_def,"storage", body, params);
         return code;
     }
 
@@ -24,7 +25,7 @@ public class StorageMethod {
         body.put("parentCode", parentCode);
         body.put("level", level+"");
         HashMap<String, String> params = new HashMap<String, String>();
-        RequestObject.testPost("storage", body, params);
+        RequestObject.testPost(Environment.server_def,"storage", body, params);
         return code;
     }
 }

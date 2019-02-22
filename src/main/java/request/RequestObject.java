@@ -10,7 +10,6 @@ import static org.hamcrest.Matchers.hasItem;
 public class RequestObject{
 
 //     1. baseUrl
-    public static final String baseUrl = Environment.baseUrl;
     public static final String orgId = Environment.orgId;
     public static final String userId = Environment.userId;
     public static final String userName = Environment.userName;
@@ -21,11 +20,11 @@ public class RequestObject{
      * @parampath
      * @paramparams
      */
-    public static ValidatableResponse testGet(String path,HashMap params){
+    public static ValidatableResponse testGet(String server,String path,HashMap params){
         return given()
                 .header("X-Org-Id",orgId)
                 .params(params)
-                .when().get(baseUrl + path)
+                .when().get("http://"+server+"-feature.test.blacklake.tech" + path)
                 .then()
                 .log().all();
     }
@@ -37,7 +36,7 @@ public class RequestObject{
      * @param body
      * @param params
      */
-    public static ValidatableResponse testPost(String path, Object body, HashMap params){
+    public static ValidatableResponse testPost(String server, String path, Object body, HashMap params){
 
         return given()
                 .contentType("application/json")
@@ -46,7 +45,7 @@ public class RequestObject{
                 .header("X-User-Name",userName)
                 .body(body)
                 .params(params)
-                .when().post(baseUrl + path)
+                .when().post("http://"+server+"-feature.test.blacklake.tech" + path)
                 .then()
                 .log().all();
     }

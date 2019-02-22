@@ -82,6 +82,8 @@ public class AdmitParams {
 
                 {"1000001",codesAndAmounts,mfgBatches,1319,400,"创建入厂二维码相同的数据"},
                 {"1000001",codesAndAmounts,mfgBatches,1319,400,"创建没有入厂物料的数据"},
+                {"1000001",codesAndAmounts,mfgBatches,null,400,"创建没有入厂仓位的数据"},
+
 
                 {"1000001",codesAndAmountsO,mfgBatchesN,1319,200,"创建没有入厂供应商的数据，只有必填项的入厂"},
 

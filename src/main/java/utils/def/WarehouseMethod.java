@@ -1,5 +1,6 @@
 package utils.def;
 
+import config.Environment;
 import request.RequestObject;
 import java.util.HashMap;
 
@@ -17,7 +18,7 @@ public class WarehouseMethod {
         body.put("name", name);
         body.put("category", category+"");
         HashMap<String, String> params = new HashMap<String, String>();
-        RequestObject.testPost("warehouse", body, params);
+        RequestObject.testPost(Environment.server_def,"warehouse", body, params);
         System.out.println(code);
         return code;
     }

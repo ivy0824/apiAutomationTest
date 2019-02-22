@@ -9,8 +9,12 @@ public class Environment {
 //    public static final String userName = "ApiTester";
 
 
-    //materialLot
-    public static final String baseUrl = "http://manufacture-feature.test.blacklake.tech/v2/";
+    //服务类别
+    //====================================================================
+    public static final String server_manufacture = "manufacture";
+    public static final String server_def = "def";
+    //====================================================================
+
     public static final String orgId = "105"; //接口测试工厂1
     public static final String userId = "11886";
     public static final String userName = "ApiTester";
