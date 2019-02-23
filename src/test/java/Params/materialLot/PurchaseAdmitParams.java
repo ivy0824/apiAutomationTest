@@ -6,20 +6,22 @@ import org.testng.annotations.DataProvider;
 
 import java.util.ArrayList;
 
-public class AdmitParams {
+public class PurchaseAdmitParams {
 
     /**
-     * 创建入厂的测试数据
-     * materialCode
+     * 创建按采购清单入厂的测试数据
+     * procureOrderId：180
+     * procureOrderDetailId：388-390
      * codesAndAmounts
-     * MfgBatches
+     * supplierCode
+     * materialCode
      * storageId
      * statusCode
      * 测试用例描述
      * @return
      */
     @DataProvider
-    public Object[][] getAdmit(){
+    public Object[][] getPurchaseAdmit(){
 
         String qcCode = (int) (Math.random() * 100000) + "";
 
@@ -58,35 +60,15 @@ public class AdmitParams {
         codesAndAmountsN.add(codesAndAmountsN1);
 
 
-        //创建供应商数据
-        ArrayList<MfgBatches> mfgBatches = new ArrayList<MfgBatches>();
-        MfgBatches mfgBatches1 = new MfgBatches("供应商批次号1");
-        MfgBatches mfgBatches2 = new MfgBatches("供应商批次号2");
-        mfgBatches.add(mfgBatches1);
-        mfgBatches.add(mfgBatches2);
-
-        //创建没有供应商的数据
-        ArrayList<MfgBatches> mfgBatchesN = new ArrayList<MfgBatches>();
-        MfgBatches mfgBatchesN1 = new MfgBatches("供应商批次号1");
-        MfgBatches mfgBatchesN2 = new MfgBatches("供应商批次号2");
-        mfgBatchesN.add(mfgBatchesN1);
-        mfgBatchesN.add(mfgBatchesN2);
-
         return new Object[][]{
-                {"",codesAndAmounts,mfgBatches,1319,400,"创建没有入厂物料的数据"},
-                {"1000002",codesAndAmounts,mfgBatches,1319,200,"创建入厂数据"},
-                {"1000002",codesAndAmounts,mfgBatches,1319,400,"创建入厂二维码相同的数据"},
+                {180,388,codesAndAmountsZ,"","1000003",1319,400,"创建没有入厂二维码的数据"},
+                {180,388,codesAndAmounts,"","1000003",null,400,"创建没有入厂仓位的数据"},
+                {180,388,codesAndAmounts,"","1000003",1319,200,"创建成功入厂的数据"},
+                {180,388,codesAndAmountsT,"","1000003",1319,200,"创建使用转换单位入厂的数据"},
 
-                {"1000002",codesAndAmountsM,mfgBatches,1319,200,"创建入厂多个二维码的数据"},
-                {"1000002",codesAndAmountsT,mfgBatches,1319,200,"创建入厂物料使用转换单位的数据"},
-                {"1000002",codesAndAmountsZ,mfgBatches,1319,400,"创建入厂二维码数量为0的数据"},
-                {"1000002",codesAndAmountsN,mfgBatches,1319,400,"创建没有入厂二维码的数据"},
-                {"1000002",codesAndAmounts,mfgBatches,null,400,"创建没有入厂仓位的数据"},
+                {180,388,codesAndAmounts,"","1000003",1319,400,"创建入厂二维码重复的数据"},
 
-
-                {"1000002",codesAndAmountsO,mfgBatchesN,1319,200,"创建没有入厂供应商的数据，只有必填项的入厂"},
-
-
+                {180,388,codesAndAmountsM,"","1000003",1319,200,"创建入厂多个二维码的数据"},
 
 
         };

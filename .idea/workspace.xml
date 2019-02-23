@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707d4204-c512-4790-9874-6ca4d54c19a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Environment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/request/RequestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/request/RequestObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/def/test/eBOM/TestEBOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/test/eBOM/TestEBOM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/def/test/material/TestMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/test/material/TestMaterial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/def/test/unit/TestUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/test/unit/TestUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestStorage1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestStorage1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestStorage2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestStorage2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestWarehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestWarehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/object/materialLot/PurchaseAdmit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/materialLot/AdmitMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Params/materialLot/DeliverParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Params/materialLot/PurchaseAdmitParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/materialLot/admit/TestPurchaseAdmit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/materialLot/deliver/TestDeliver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/def/StorageMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/def/StorageMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Params/materialLot/AdmitParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Params/materialLot/AdmitParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/Environment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/Environment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/request/RequestObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/request/RequestObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/def/StorageMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/def/StorageMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Params/materialLot/AdmitParams.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Params/materialLot/AdmitParams.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/def/test/eBOM/TestEBOM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/def/test/eBOM/TestEBOM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/def/test/material/TestMaterial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/def/test/material/TestMaterial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/def/test/unit/TestUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/def/test/unit/TestUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/def/test/warehouse/TestStorage1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/def/test/warehouse/TestStorage1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/def/test/warehouse/TestStorage2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/def/test/warehouse/TestStorage2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/def/test/warehouse/TestWarehouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/def/test/warehouse/TestWarehouse.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,14 +44,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="87" />
+          <entry key="JAVA" value="116" />
           <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1352" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="JAVA" value="2361" />
+          <entry key="PLAIN_TEXT" value="13" />
           <entry key="XML" value="26" />
         </counts>
       </usages-collector>
@@ -49,12 +60,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/materialLot/admit/TestAdmit.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Params/materialLot/PurchaseAdmitParams.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="335">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/materialLot/admit/TestPurchaseAdmit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#749#765#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,13 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/def/test/unit/unitMethod.java" />
-        <option value="$PROJECT_DIR$/src/test/java/def/test/material/testMaterial.java" />
-        <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/eBOMParams.java" />
-        <option value="$PROJECT_DIR$/src/test/java/def/test/eBOM/testEBOM.java" />
-        <option value="$PROJECT_DIR$/src/test/java/commonMethod/ExcelReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/def/test/CommonMethod/ExcelReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/def/test/eBOM/TestEBOM1.java" />
         <option value="$PROJECT_DIR$/src/test/java/def/test/defObject/Ebom.java" />
         <option value="$PROJECT_DIR$/src/test/java/def/test/material/MaterialMethod.java" />
         <option value="$PROJECT_DIR$/src/test/java/def/test/defDataParams/eBOMParamsTest.java" />
@@ -119,8 +136,6 @@
         <option value="$PROJECT_DIR$/src/test/java/materialLot/admit/TestAdmit.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/def/UnitMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/def/WarehouseMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/def/StorageMethod.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Params/materialLot/AdmitParams.java" />
         <option value="$PROJECT_DIR$/src/test/java/def/test/eBOM/TestEBOM.java" />
         <option value="$PROJECT_DIR$/src/test/java/def/test/material/TestMaterial.java" />
         <option value="$PROJECT_DIR$/src/test/java/def/test/unit/TestUnit.java" />
@@ -129,6 +144,15 @@
         <option value="$PROJECT_DIR$/src/test/java/def/test/warehouse/TestWarehouse.java" />
         <option value="$PROJECT_DIR$/src/main/java/config/Environment.java" />
         <option value="$PROJECT_DIR$/src/main/java/request/RequestObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/def/StorageMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object/materialLot/MaterialLotIdList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/materialLot/deliver/TestDeliver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/materialLot/AdmitMethod.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Params/materialLot/DeliverParams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object/materialLot/PurchaseAdmit.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Params/materialLot/AdmitParams.java" />
+        <option value="$PROJECT_DIR$/src/test/java/materialLot/admit/TestPurchaseAdmit.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Params/materialLot/PurchaseAdmitParams.java" />
       </list>
     </option>
   </component>
@@ -202,6 +226,22 @@
               <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
               <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,23 +250,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="materialLot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mavenDemo1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mavenDemo1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="materialLot" type="462c0819:PsiDirectoryNode" />
-              <item name="admit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -240,7 +263,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550836400332" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550910318409" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -268,24 +291,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestAdmit.testAdmitPost">
-    <configuration name="All Features in: admit" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="3" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/materialLot/admit" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="apiTest" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
-      <option name="SUGGESTED_NAME" value="All Features in: admit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestPurchaseAdmit.testAdmitPost">
     <configuration name="Unnamed" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -309,17 +315,17 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="TestAdmit.testAdmitPost (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeliverParams.test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="apiTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="materialLot.admit.*" />
+          <option name="PATTERN" value="Params.materialLot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="materialLot.admit" />
-      <option name="MAIN_CLASS_NAME" value="materialLot.admit.TestAdmit" />
-      <option name="METHOD_NAME" value="testAdmitPost" />
+      <option name="PACKAGE_NAME" value="Params.materialLot" />
+      <option name="MAIN_CLASS_NAME" value="Params.materialLot.DeliverParams" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -327,7 +333,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAdmit.testAdmitPost (2)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAdmit.testAdmitPost" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="apiTest" />
       <extension name="coverage">
         <pattern>
@@ -363,17 +369,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestEBOM.testEBOMPost" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDeliver.testDelivertPost" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="apiTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="def.test.eBOM.*" />
+          <option name="PATTERN" value="materialLot.deliver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="def.test.eBOM" />
-      <option name="MAIN_CLASS_NAME" value="def.test.eBOM.TestEBOM" />
-      <option name="METHOD_NAME" value="testEBOMPost" />
+      <option name="PACKAGE_NAME" value="materialLot.deliver" />
+      <option name="MAIN_CLASS_NAME" value="materialLot.deliver.TestDeliver" />
+      <option name="METHOD_NAME" value="testDelivertPost" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPurchaseAdmit.testAdmitPost" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="apiTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="materialLot.admit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="materialLot.admit" />
+      <option name="MAIN_CLASS_NAME" value="materialLot.admit.TestPurchaseAdmit" />
+      <option name="METHOD_NAME" value="testAdmitPost" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -383,19 +407,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.Unnamed" />
-      <item itemvalue="Cucumber java.All Features in: admit" />
       <item itemvalue="TestNG.TestAdmit.testAdmitPost" />
-      <item itemvalue="TestNG.TestEBOM.testEBOMPost" />
-      <item itemvalue="TestNG.TestAdmit.testAdmitPost (1)" />
       <item itemvalue="TestNG.TestAdmit.testAdmitPost (2)" />
+      <item itemvalue="TestNG.TestDeliver.testDelivertPost" />
+      <item itemvalue="TestNG.DeliverParams.test" />
+      <item itemvalue="TestNG.TestPurchaseAdmit.testAdmitPost" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestPurchaseAdmit.testAdmitPost" />
+        <item itemvalue="TestNG.TestDeliver.testDelivertPost" />
+        <item itemvalue="TestNG.DeliverParams.test" />
         <item itemvalue="TestNG.TestAdmit.testAdmitPost" />
         <item itemvalue="TestNG.TestAdmit.testAdmitPost (2)" />
-        <item itemvalue="TestNG.TestAdmit.testAdmitPost (1)" />
-        <item itemvalue="TestNG.TestEBOM.testEBOMPost" />
-        <item itemvalue="Cucumber java.All Features in: admit" />
       </list>
     </recent_temporary>
   </component>
@@ -428,44 +452,44 @@
       <workItem from="1549880994633" duration="12976000" />
       <workItem from="1550055852684" duration="1105000" />
       <workItem from="1550142811392" duration="3222000" />
-      <workItem from="1550720291199" duration="23382000" />
+      <workItem from="1550720291199" duration="37275000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAdmit_testAdmitPost - 2019.02.21 at 19h 04m 25s.xml">
-      <configuration name="TestAdmit.testAdmitPost" configurationId="TestNG" />
+    <history-entry file="DeliverParams_test - 2019.02.23 at 14h 26m 31s.xml">
+      <configuration name="DeliverParams.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAdmit_testAdmitPost - 2019.02.22 at 14h 42m 28s.xml">
-      <configuration name="TestAdmit.testAdmitPost" configurationId="TestNG" />
+    <history-entry file="TestDeliver_testDelivertPost - 2019.02.23 at 14h 28m 52s.xml">
+      <configuration name="TestDeliver.testDelivertPost" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAdmit_testAdmitPost - 2019.02.22 at 14h 49m 45s.xml">
-      <configuration name="TestAdmit.testAdmitPost" configurationId="TestNG" />
+    <history-entry file="TestDeliver_testDelivertPost - 2019.02.23 at 14h 40m 45s.xml">
+      <configuration name="TestDeliver.testDelivertPost" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAdmit_testAdmitPost - 2019.02.22 at 14h 50m 08s.xml">
-      <configuration name="TestAdmit.testAdmitPost" configurationId="TestNG" />
+    <history-entry file="TestDeliver_testDelivertPost - 2019.02.23 at 14h 41m 16s.xml">
+      <configuration name="TestDeliver.testDelivertPost" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAdmit_testAdmitPost - 2019.02.22 at 19h 22m 40s.xml">
-      <configuration name="TestAdmit.testAdmitPost" configurationId="TestNG" />
+    <history-entry file="TestDeliver_testDelivertPost - 2019.02.23 at 14h 51m 58s.xml">
+      <configuration name="TestDeliver.testDelivertPost" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAdmit_testAdmitPost - 2019.02.22 at 19h 25m 37s.xml">
-      <configuration name="TestAdmit.testAdmitPost" configurationId="TestNG" />
+    <history-entry file="TestDeliver_testDelivertPost - 2019.02.23 at 14h 54m 10s.xml">
+      <configuration name="TestDeliver.testDelivertPost" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAdmit_testAdmitPost - 2019.02.22 at 19h 26m 55s.xml">
-      <configuration name="TestAdmit.testAdmitPost" configurationId="TestNG" />
+    <history-entry file="TestDeliver_testDelivertPost - 2019.02.23 at 14h 55m 51s.xml">
+      <configuration name="TestDeliver.testDelivertPost" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAdmit_testAdmitPost - 2019.02.22 at 19h 32m 02s.xml">
-      <configuration name="TestAdmit.testAdmitPost" configurationId="TestNG" />
+    <history-entry file="TestPurchaseAdmit_testAdmitPost - 2019.02.23 at 16h 00m 55s.xml">
+      <configuration name="TestPurchaseAdmit.testAdmitPost" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAdmit_testAdmitPost_(2) - 2019.02.22 at 19h 42m 46s.xml">
-      <configuration name="TestAdmit.testAdmitPost (2)" configurationId="TestNG" />
+    <history-entry file="TestPurchaseAdmit_testAdmitPost - 2019.02.23 at 16h 05m 31s.xml">
+      <configuration name="TestPurchaseAdmit.testAdmitPost" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAdmit_testAdmitPost - 2019.02.22 at 19h 46m 26s.xml">
-      <configuration name="TestAdmit.testAdmitPost" configurationId="TestNG" />
+    <history-entry file="TestPurchaseAdmit_testAdmitPost - 2019.02.23 at 16h 06m 52s.xml">
+      <configuration name="TestPurchaseAdmit.testAdmitPost" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27724000" />
+    <option name="totallyTimeSpent" value="41617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -480,7 +504,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3927711" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.14578313" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38313252" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -599,38 +623,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Params/def/EBOMParams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/object/def/EBOM.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object/materialLot/MfgBatches.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object/materialLot/CodesAndAmounts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -641,27 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object/materialLot/Admit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="11" column="121" selection-start-line="11" selection-start-column="121" selection-end-line="11" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/def/UnitMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/def/MaterialMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/def/WarehouseMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -669,42 +644,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/def/StorageMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Params/materialLot/AdmitParams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="80" column="60" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#579#596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/def/test/eBOM/TestEBOM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/def/test/material/TestMaterial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
           <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/def/test/unit/TestUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -729,17 +672,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/def/MaterialMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/def/StorageMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Params/def/EBOMParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/def/UnitMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object/materialLot/MfgBatches.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object/materialLot/MaterialLotIdList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#135#136#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object/materialLot/CodesAndAmounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/def/test/eBOM/TestEBOM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/def/test/unit/TestUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/materialLot/deliver/TestDeliver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#517#533#0" expanded="true" />
+            <element signature="e#935#951#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/request/RequestObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        <state relative-caret-position="825">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#1703#1704#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/config/Environment.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object/materialLot/Admit.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -747,6 +786,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/materialLot/AdmitMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#567#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Params/materialLot/DeliverParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="68" column="71" lean-forward="true" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1697#1714#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object/materialLot/PurchaseAdmit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Params/materialLot/AdmitParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/materialLot/admit/TestPurchaseAdmit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#749#765#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Params/materialLot/PurchaseAdmitParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
