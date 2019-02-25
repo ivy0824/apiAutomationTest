@@ -27,6 +27,7 @@ public class RequestObject{
                 .params(params)
                 .when().get("http://"+server+url + path)
                 .then()
+                .log().body()
                 .log().all();
     }
 
@@ -48,6 +49,7 @@ public class RequestObject{
                 .params(params)
                 .when().post("http://"+server+url + path)
                 .then()
+                .log().body()
                 .log().all();
     }
 

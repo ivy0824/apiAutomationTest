@@ -2,7 +2,6 @@ package materialLot.admit;
 
 import Params.materialLot.PurchaseAdmitParams;
 import config.Environment;
-import object.materialLot.Admit;
 import object.materialLot.PurchaseAdmit;
 import org.testng.annotations.Test;
 import request.RequestObject;

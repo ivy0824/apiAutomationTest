@@ -12,7 +12,7 @@ public class PurchaseAdmit {
     private Object storageId;
 
 
-    public PurchaseAdmit(int procureOrderId,int procureOrderDetailId, ArrayList<CodesAndAmounts> codesAndAmounts,String supplierCode,String materialCode, Object storageId ) {
+    public void PurchaseAdmit(int procureOrderId,int procureOrderDetailId, ArrayList<CodesAndAmounts> codesAndAmounts,String supplierCode,String materialCode, Object storageId ) {
         this.procureOrderId = procureOrderId;
         this.procureOrderDetailId = procureOrderDetailId;
         this.codesAndAmounts = codesAndAmounts;

@@ -1,9 +1,7 @@
 package Params.materialLot;
 
 import object.materialLot.CodesAndAmounts;
-import object.materialLot.MfgBatches;
 import org.testng.annotations.DataProvider;
-
 import java.util.ArrayList;
 
 public class PurchaseAdmitParams {
