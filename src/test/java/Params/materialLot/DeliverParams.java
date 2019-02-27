@@ -72,8 +72,10 @@ public class DeliverParams {
         mfgBatches.add(mfgBatches1);
         mfgBatches.add(mfgBatches2);
 
-        //创建入厂物料并获取反回的物料单元值
+        //创建入厂物料并获取返回的物料单元值
+        //入厂单个二维码
         int materialLotId1 = AdmitMethod.admit("1000001",codesAndAmounts,1319).get(qcCode) ;
+        //入厂多个二维码
         HashMap<String,Integer> materialLotId = AdmitMethod.admit("1000002",codesAndAmounts1,1319);
         int materialLotId2 = materialLotId.get(qcCode+"0");
         int materialLotId3 = materialLotId.get(qcCode+"1");

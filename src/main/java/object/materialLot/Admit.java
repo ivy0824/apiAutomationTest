@@ -26,7 +26,7 @@ public class Admit {
     private String remark;
 
 
-    public void AdmitAll(String materialCode, ArrayList<CodesAndAmounts> codesAndAmounts,ArrayList<MfgBatches> MfgBatches, Object storageId,String validityPeriod,String supplierCode,HashMap originPlace,String remark ) {
+    public void admitAll(String materialCode, ArrayList<CodesAndAmounts> codesAndAmounts,ArrayList<MfgBatches> MfgBatches, Object storageId,String validityPeriod,String supplierCode,HashMap originPlace,String remark ) {
         this.materialCode = materialCode;
         this.codesAndAmounts = codesAndAmounts;
         this.MfgBatches = MfgBatches;
@@ -37,7 +37,7 @@ public class Admit {
         this.remark = remark;
     }
 
-    public void AdmitNeed(String materialCode, ArrayList<CodesAndAmounts> codesAndAmounts, Object storageId ) {
+    public void admitNeed(String materialCode, ArrayList<CodesAndAmounts> codesAndAmounts, Object storageId ) {
         this.materialCode = materialCode;
         this.codesAndAmounts = codesAndAmounts;
         this.storageId = storageId;

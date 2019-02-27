@@ -18,7 +18,7 @@ public class TestAdmit {
         System.out.println("----------" + msg + "----------");
 
         Admit admit = new Admit();
-        admit.AdmitAll(materialCode,codesAndAmounts,mfgBatches,storageId,validityPeriod,supplierCode,originPlace,remark);
+        admit.admitAll(materialCode,codesAndAmounts,mfgBatches,storageId,validityPeriod,supplierCode,originPlace,remark);
         System.out.println(admit.toString());
         HashMap<String,String> params=new HashMap<String, String>();
         RequestObject.getStatus(RequestObject.testPost(Environment.server_manufacture,"/v2/materialLot/_admit",admit,params),statusCode);
