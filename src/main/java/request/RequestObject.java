@@ -4,6 +4,8 @@ import config.Environment;
 import io.restassured.response.ValidatableResponse;
 import java.util.HashMap;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasItem;
 
@@ -49,7 +51,6 @@ public class RequestObject{
                 .params(params)
                 .when().post("http://"+server+url + path)
                 .then()
-                .log().body()
                 .log().all();
     }
 
@@ -91,7 +92,7 @@ public class RequestObject{
      * @param jsonPath
      * @param responseMessage
      */
-    public static void getHasItem(ValidatableResponse response, String jsonPath, String responseMessage){
-        response.body(jsonPath, hasItem(responseMessage));
+    public static void getContainsString(ValidatableResponse response, String jsonPath, String responseMessage){
+        response.body(jsonPath, containsString(responseMessage));
     }
 }

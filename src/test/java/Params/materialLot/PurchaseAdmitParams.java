@@ -1,5 +1,6 @@
 package Params.materialLot;
 
+import config.Environment;
 import object.materialLot.CodesAndAmounts;
 import org.testng.annotations.DataProvider;
 import java.util.ArrayList;
@@ -59,14 +60,14 @@ public class PurchaseAdmitParams {
 
 
         return new Object[][]{
-                {180,388,codesAndAmountsZ,"","1000003",1319,400,"创建没有入厂二维码的数据"},
+                {180,388,codesAndAmountsZ,"","1000003", Environment.storageId,400,"创建没有入厂二维码的数据"},
                 {180,388,codesAndAmounts,"","1000003",null,400,"创建没有入厂仓位的数据"},
-                {180,388,codesAndAmounts,"","1000003",1319,200,"创建成功入厂的数据"},
-                {180,388,codesAndAmountsT,"","1000003",1319,200,"创建使用转换单位入厂的数据"},
+                {180,388,codesAndAmounts,"","1000003",Environment.storageId,200,"创建成功入厂的数据"},
+                {180,388,codesAndAmountsT,"","1000003",Environment.storageId,200,"创建使用转换单位入厂的数据"},
 
-                {180,388,codesAndAmounts,"","1000003",1319,400,"创建入厂二维码重复的数据"},
+                {180,388,codesAndAmounts,"","1000003",Environment.storageId,400,"创建入厂二维码重复的数据"},
 
-                {180,388,codesAndAmountsM,"","1000003",1319,200,"创建入厂多个二维码的数据"},
+                {180,388,codesAndAmountsM,"","1000003",Environment.storageId,200,"创建入厂多个二维码的数据"},
 
 
         };

@@ -1,5 +1,6 @@
 package Params.materialLot;
 
+import config.Environment;
 import object.materialLot.CodesAndAmounts;
 import object.materialLot.MfgBatches;
 import object.materialLot.Targets;
@@ -35,7 +36,7 @@ public class SplitParams {
         codesAndAmounts.add(codesAndAmounts2);
 
         //创建入厂物料并获取返回的物料单元值
-        HashMap<String,Integer> materialLotId = AdmitMethod.admit("1000002",codesAndAmounts,1319);
+        HashMap<String,Integer> materialLotId = AdmitMethod.admit("1000002",codesAndAmounts, Environment.storageId);
         int sourceMaterialLotId1 = materialLotId.get(qcCode+"1");
         int sourceMaterialLotId2 = materialLotId.get(qcCode+"2");
 
@@ -64,10 +65,10 @@ public class SplitParams {
 
 
         return new Object[][]{
-                {sourceMaterialLotId1,targetsN,"该二维码是物料二维码, 请扫描空码进行拆分","拆分到单非空二维码中"},
-                {sourceMaterialLotId1,targets0,"解绑二维码失败","拆分到原二维码数量等于0的二维码中"},
-                {sourceMaterialLotId1,targets2,"物料拆分后的新物料数量必须大于零","拆分的新二维码数量等于0"},
-                {sourceMaterialLotId1,targets1,"成功","拆分到原二维码数量大余0的多个二维码中"},
+                {sourceMaterialLotId1,targetsN,"该二维码是物料二维码, 请扫描空码进行拆分","拆分到非空二维码中"},
+                {sourceMaterialLotId1,targets0,"成功","拆分到原二维码数量等于0的二维码中"},
+                {sourceMaterialLotId1,targets2,"物料拆分后的新物料数量必须大于零","拆分的新二维码数量大于0"},
+                {sourceMaterialLotId2,targets1,"成功","拆分到原二维码数量大余0的多个二维码中"},
 
 
         };

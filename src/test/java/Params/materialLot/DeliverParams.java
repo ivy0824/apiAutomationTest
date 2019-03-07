@@ -1,5 +1,6 @@
 package Params.materialLot;
 
+import config.Environment;
 import object.materialLot.CodesAndAmounts;
 import object.materialLot.MfgBatches;
 import org.testng.annotations.DataProvider;
@@ -74,9 +75,9 @@ public class DeliverParams {
 
         //创建入厂物料并获取返回的物料单元值
         //入厂单个二维码
-        int materialLotId1 = AdmitMethod.admit("1000001",codesAndAmounts,1319).get(qcCode) ;
+        int materialLotId1 = AdmitMethod.admit("1000001",codesAndAmounts, Environment.storageId).get(qcCode) ;
         //入厂多个二维码
-        HashMap<String,Integer> materialLotId = AdmitMethod.admit("1000002",codesAndAmounts1,1319);
+        HashMap<String,Integer> materialLotId = AdmitMethod.admit("1000002",codesAndAmounts1,Environment.storageId);
         int materialLotId2 = materialLotId.get(qcCode+"0");
         int materialLotId3 = materialLotId.get(qcCode+"1");
 

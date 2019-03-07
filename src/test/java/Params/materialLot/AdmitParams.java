@@ -1,5 +1,6 @@
 package Params.materialLot;
 
+import config.Environment;
 import object.materialLot.CodesAndAmounts;
 import object.materialLot.MfgBatches;
 import object.materialLot.OriginPlace;
@@ -90,18 +91,18 @@ public class AdmitParams {
 
 
         return new Object[][]{
-                {"",codesAndAmounts,mfgBatches,1319,"2021-02-25T07:16:48.000Z","00000001",originPlace,"入厂备注信息",400,"创建没有入厂物料的数据"},
-                {"1000002",codesAndAmounts,mfgBatches,1319,"2021-02-25T07:16:48.000Z","00000001",originPlace,"入厂备注信息",200,"创建入厂数据"},
-                {"1000002",codesAndAmounts,mfgBatches,1319,"2021-02-25T07:16:48.000Z","00000001",originPlace,"入厂备注信息",400,"创建入厂二维码相同的数据"},
+                {"",codesAndAmounts,mfgBatches, Environment.storageId,"2021-02-25T07:16:48.000Z","00000001",originPlace,"入厂备注信息",400,"创建没有入厂物料的数据"},
+                {"1000002",codesAndAmounts,mfgBatches,Environment.storageId,"2021-02-25T07:16:48.000Z","00000001",originPlace,"入厂备注信息",200,"创建入厂数据"},
+                {"1000002",codesAndAmounts,mfgBatches,Environment.storageId,"2021-02-25T07:16:48.000Z","00000001",originPlace,"入厂备注信息",400,"创建入厂二维码相同的数据"},
 
-                {"1000002",codesAndAmountsM,mfgBatches,1319,"","",originPlaceN,"",200,"创建入厂多个二维码的数据"},
-                {"1000002",codesAndAmountsT,mfgBatches,1319,"","",originPlaceN,"",200,"创建入厂物料使用转换单位的数据"},
-                {"1000002",codesAndAmountsZ,mfgBatches,1319,"","",originPlaceN,"",400,"创建入厂二维码数量为0的数据"},
-                {"1000002",codesAndAmountsN,mfgBatches,1319,"","",originPlaceN,"",400,"创建没有入厂二维码的数据"},
+                {"1000002",codesAndAmountsM,mfgBatches,Environment.storageId,"","",originPlaceN,"",200,"创建入厂多个二维码的数据"},
+                {"1000002",codesAndAmountsT,mfgBatches,Environment.storageId,"","",originPlaceN,"",200,"创建入厂物料使用转换单位的数据"},
+                {"1000002",codesAndAmountsZ,mfgBatches,Environment.storageId,"","",originPlaceN,"",400,"创建入厂二维码数量为0的数据"},
+                {"1000002",codesAndAmountsN,mfgBatches,Environment.storageId,"","",originPlaceN,"",400,"创建没有入厂二维码的数据"},
                 {"1000002",codesAndAmounts,mfgBatches,null,"","",originPlaceN,"",400,"创建没有入厂仓位的数据"},
 
 
-                {"1000002",codesAndAmountsO,mfgBatchesN,1319,"","",originPlaceN,"",200,"创建没有非必填项，只有必填项的入厂数据"},
+                {"1000002",codesAndAmountsO,mfgBatchesN,Environment.storageId,"","",originPlaceN,"",200,"创建没有非必填项，只有必填项的入厂数据"},
 
 
 
