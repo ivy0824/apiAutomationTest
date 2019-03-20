@@ -23,7 +23,7 @@ public class TestMaterial {
     }
 
     /**
-     * 测试创建单位
+     * 测试创建物料
      * @param code
      * @param name
      * @param statusCode
@@ -38,7 +38,7 @@ public class TestMaterial {
         body.put("status", "1");
         body.put("unitId",unitId);
         HashMap<String, String> params = new HashMap<String, String>();
-        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"material", body, params), statusCode);
+        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"/v1/material", body, params), statusCode);
     }
 
     /**
