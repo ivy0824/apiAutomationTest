@@ -1,0 +1,791 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>47/1/2</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 20 16:54:16 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24961 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='def.eBOM.TestEBOM.testEBOMPost1()'><b>testEBOMPost1</b><br>Test class: def.eBOM.TestEBOM<br>Parameters: 1000003, 1000003, 1, 1, 1001, [RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='null', regulatoryControl=true}, RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='null', regulatoryControl=true}], 200, 创建正常的物料列表</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at request.RequestObject.getStatus(RequestObject.java:64)
+	at def.eBOM.TestEBOM.testEBOMPost1(TestEBOM.java:28)
+... Removed 45 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1264674474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1264674474'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at request.RequestObject.getStatus(RequestObject.java:64)
+	at def.eBOM.TestEBOM.testEBOMPost1(TestEBOM.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>def.eBOM.TestEBOM@b97c004</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='materialLot.adjust.TestAdjust.testAdjustPost()'><b>testAdjustPost</b><br>Test class: materialLot.adjust.TestAdjust<br>Parameters: 6286, adjust1, 100, -10, 成功, 物料调整数量减少</td>
+<td></td>
+<td>0</td>
+<td>materialLot.adjust.TestAdjust@2669b199</td></tr>
+<tr>
+<td title='materialLot.adjust.TestAdjust.testAdjustPost()'><b>testAdjustPost</b><br>Test class: materialLot.adjust.TestAdjust<br>Parameters: 6286, adjust1, 90, 10, 成功, 物料调整数量增加</td>
+<td></td>
+<td>0</td>
+<td>materialLot.adjust.TestAdjust@2669b199</td></tr>
+<tr>
+<td title='materialLot.adjust.TestAdjust.testAdjustPost()'><b>testAdjustPost</b><br>Test class: materialLot.adjust.TestAdjust<br>Parameters: 6286, adjust1, 100, -200, 物料数量不能为负, 物料调整数量为负数</td>
+<td></td>
+<td>0</td>
+<td>materialLot.adjust.TestAdjust@2669b199</td></tr>
+<tr>
+<td title='materialLot.adjust.TestAdjust.testAdjustPost()'><b>testAdjustPost</b><br>Test class: materialLot.adjust.TestAdjust<br>Parameters: 6286, adjust1, 100, -100, 成功, 物料调整数量为0</td>
+<td></td>
+<td>0</td>
+<td>materialLot.adjust.TestAdjust@2669b199</td></tr>
+<tr>
+<td title='materialLot.admit.TestAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestAdmit<br>Parameters: , [CodeAndAmount{amount='100.0',code='42464',unit;拖'}], [MfgBatches{mfgBatchNo='供应商批次号1'}, MfgBatches{mfgBatchNo='供应商批次号2'}], 1319, Wed Mar 20 16:54:34 CST 2019, 00000001, OriginPlace{province='北京市'city='东城区'}, 入厂备注信息, 400, 创建没有入厂物料的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestAdmit@6ea12c19</td></tr>
+<tr>
+<td title='materialLot.admit.TestAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestAdmit<br>Parameters: 1000002, [CodeAndAmount{amount='100.0',code='42464',unit;拖'}], [MfgBatches{mfgBatchNo='供应商批次号1'}, MfgBatches{mfgBatchNo='供应商批次号2'}], 1319, Wed Mar 20 16:54:34 CST 2019, 00000001, OriginPlace{province='北京市'city='东城区'}, 入厂备注信息, 200, 创建入厂数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestAdmit@6ea12c19</td></tr>
+<tr>
+<td title='materialLot.admit.TestAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestAdmit<br>Parameters: 1000002, [CodeAndAmount{amount='100.0',code='42464',unit;拖'}], [MfgBatches{mfgBatchNo='供应商批次号1'}, MfgBatches{mfgBatchNo='供应商批次号2'}], 1319, Wed Mar 20 16:54:34 CST 2019, 00000001, OriginPlace{province='北京市'city='东城区'}, 入厂备注信息, 400, 创建入厂二维码相同的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestAdmit@6ea12c19</td></tr>
+<tr>
+<td title='materialLot.admit.TestAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestAdmit<br>Parameters: 1000002, [CodeAndAmount{amount='100.0',code='424641-0',unit;拖'}, CodeAndAmount{amount='100.0',code='424641-1',unit;拖'}, CodeAndAmount{amount='100.0',code='424641-2',unit;拖'}], [MfgBatches{mfgBatchNo='供应商批次号1'}, MfgBatches{mfgBatchNo='供应商批次号2'}], 1319, Wed Mar 20 16:54:34 CST 2019, 00000001, OriginPlace{province='北京市'city='东城区'}, 入厂备注信息, 200, 创建入厂多个二维码的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestAdmit@6ea12c19</td></tr>
+<tr>
+<td title='materialLot.admit.TestAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestAdmit<br>Parameters: 1000002, [CodeAndAmount{amount='100.0',code='424643',unit;瓶'}], [MfgBatches{mfgBatchNo='供应商批次号1'}, MfgBatches{mfgBatchNo='供应商批次号2'}], 1319, Wed Mar 20 16:54:34 CST 2019, 00000001, OriginPlace{province='北京市'city='东城区'}, 入厂备注信息, 200, 创建入厂物料使用转换单位的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestAdmit@6ea12c19</td></tr>
+<tr>
+<td title='materialLot.admit.TestAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestAdmit<br>Parameters: 1000002, [CodeAndAmount{amount='0.0',code='424642',unit;拖'}], [MfgBatches{mfgBatchNo='供应商批次号1'}, MfgBatches{mfgBatchNo='供应商批次号2'}], 1319, Wed Mar 20 16:54:34 CST 2019, 00000001, OriginPlace{province='北京市'city='东城区'}, 入厂备注信息, 400, 创建入厂二维码数量为0的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestAdmit@6ea12c19</td></tr>
+<tr>
+<td title='materialLot.admit.TestAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestAdmit<br>Parameters: 1000002, [CodeAndAmount{amount='0.0',code='',unit;'}], [MfgBatches{mfgBatchNo='供应商批次号1'}, MfgBatches{mfgBatchNo='供应商批次号2'}], 1319, Wed Mar 20 16:54:34 CST 2019, 00000001, OriginPlace{province='北京市'city='东城区'}, 入厂备注信息, 400, 创建没有入厂二维码的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestAdmit@6ea12c19</td></tr>
+<tr>
+<td title='materialLot.admit.TestAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestAdmit<br>Parameters: 1000002, [CodeAndAmount{amount='100.0',code='42464',unit;拖'}], [MfgBatches{mfgBatchNo='供应商批次号1'}, MfgBatches{mfgBatchNo='供应商批次号2'}], null, Wed Mar 20 16:54:34 CST 2019, 00000001, OriginPlace{province='北京市'city='东城区'}, 入厂备注信息, 400, 创建没有入厂仓位的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestAdmit@6ea12c19</td></tr>
+<tr>
+<td title='materialLot.admit.TestPurchaseAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestPurchaseAdmit<br>Parameters: 180, 388, [CodesAndAmounts{amount='0',code='7462',unit;拖'}], , 1000003, 1319, 400, 创建没有入厂二维码的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestPurchaseAdmit@6a024a67</td></tr>
+<tr>
+<td title='materialLot.admit.TestPurchaseAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestPurchaseAdmit<br>Parameters: 180, 388, [CodesAndAmounts{amount='100',code='746',unit;拖'}], , 1000003, null, 400, 创建没有入厂仓位的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestPurchaseAdmit@6a024a67</td></tr>
+<tr>
+<td title='materialLot.admit.TestPurchaseAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestPurchaseAdmit<br>Parameters: 180, 388, [CodesAndAmounts{amount='100',code='746',unit;拖'}], , 1000003, 1319, 200, 创建成功入厂的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestPurchaseAdmit@6a024a67</td></tr>
+<tr>
+<td title='materialLot.admit.TestPurchaseAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestPurchaseAdmit<br>Parameters: 180, 388, [CodesAndAmounts{amount='100',code='7463',unit;瓶'}], , 1000003, 1319, 200, 创建使用转换单位入厂的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestPurchaseAdmit@6a024a67</td></tr>
+<tr>
+<td title='materialLot.admit.TestPurchaseAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestPurchaseAdmit<br>Parameters: 180, 388, [CodesAndAmounts{amount='100',code='746',unit;拖'}], , 1000003, 1319, 400, 创建入厂二维码重复的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestPurchaseAdmit@6a024a67</td></tr>
+<tr>
+<td title='materialLot.admit.TestPurchaseAdmit.testAdmitPost()'><b>testAdmitPost</b><br>Test class: materialLot.admit.TestPurchaseAdmit<br>Parameters: 180, 388, [CodesAndAmounts{amount='100',code='7461-0',unit;拖'}, CodesAndAmounts{amount='100',code='7461-1',unit;拖'}, CodesAndAmounts{amount='100',code='7461-2',unit;拖'}], , 1000003, 1319, 200, 创建入厂多个二维码的数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.admit.TestPurchaseAdmit@6a024a67</td></tr>
+<tr>
+<td title='materialLot.deliver.TestDeliver.testDelivertPost()'><b>testDelivertPost</b><br>Test class: materialLot.deliver.TestDeliver<br>Parameters: 1000001, [I@58f174d9, 200, 创建只有一个二维码的出厂数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.deliver.TestDeliver@5afa04c</td></tr>
+<tr>
+<td title='materialLot.deliver.TestDeliver.testDelivertPost()'><b>testDelivertPost</b><br>Test class: materialLot.deliver.TestDeliver<br>Parameters: 1000001, [I@78c7f9b3, 200, 创建两种物料二维码的出厂数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.deliver.TestDeliver@5afa04c</td></tr>
+<tr>
+<td title='materialLot.deliver.TestDeliver.testDelivertPost()'><b>testDelivertPost</b><br>Test class: materialLot.deliver.TestDeliver<br>Parameters: 1000001, [I@58f174d9, 400, 创建空二维码的出厂数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.deliver.TestDeliver@5afa04c</td></tr>
+<tr>
+<td title='materialLot.deliver.TestDeliver.testDelivertPost()'><b>testDelivertPost</b><br>Test class: materialLot.deliver.TestDeliver<br>Parameters: 1000001, [I@6f8d7714, 400, 创建没有二维码的出厂数据</td>
+<td></td>
+<td>0</td>
+<td>materialLot.deliver.TestDeliver@5afa04c</td></tr>
+<tr>
+<td title='def.eBOM.TestEBOM.testEBOMPost()'><b>testEBOMPost</b><br>Test class: def.eBOM.TestEBOM<br>Parameters: 1000003, 1000003, 1, 1, , [RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='1000001', regulatoryControl=true}, RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='1000002', regulatoryControl=true}], 400, 创建版本号为空的物料清单</td>
+<td></td>
+<td>0</td>
+<td>def.eBOM.TestEBOM@b97c004</td></tr>
+<tr>
+<td title='def.eBOM.TestEBOM.testEBOMPost()'><b>testEBOMPost</b><br>Test class: def.eBOM.TestEBOM<br>Parameters: 1000003, 1000003, 1, 1, 41122, [RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='1000001', regulatoryControl=true}, RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='1000002', regulatoryControl=true}], 200, 创建有效的物料清单</td>
+<td></td>
+<td>0</td>
+<td>def.eBOM.TestEBOM@b97c004</td></tr>
+<tr>
+<td title='def.eBOM.TestEBOM.testEBOMPost()'><b>testEBOMPost</b><br>Test class: def.eBOM.TestEBOM<br>Parameters: 1000003, 1000003, 1, 1, 41122, [RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='1000001', regulatoryControl=true}, RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='1000002', regulatoryControl=true}], 400, 创建版本号重复的物料清单</td>
+<td></td>
+<td>0</td>
+<td>def.eBOM.TestEBOM@b97c004</td></tr>
+<tr>
+<td title='def.eBOM.TestEBOM.testEBOMPost1()'><b>testEBOMPost1</b><br>Test class: def.eBOM.TestEBOM<br>Parameters: 1000003, 1000003, 1, 1, 1002, [RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='null', regulatoryControl=true}, RawMaterial{amount='', lossRate='',currentUnitId;', materialCode='', regulatoryControl=true}], 400, 创建值为空的物料列表</td>
+<td></td>
+<td>0</td>
+<td>def.eBOM.TestEBOM@b97c004</td></tr>
+<tr>
+<td title='def.material.TestMaterial.testMaterialPost()'><b>testMaterialPost</b><br>Test class: def.material.TestMaterial<br>Parameters: material17969, , 400, 创建有编码没有名称的物料</td>
+<td></td>
+<td>0</td>
+<td>def.material.TestMaterial@6574b225</td></tr>
+<tr>
+<td title='def.material.TestMaterial.testMaterialPost()'><b>testMaterialPost</b><br>Test class: def.material.TestMaterial<br>Parameters: , 7969, 400, 创建无编码有名称的物料</td>
+<td></td>
+<td>0</td>
+<td>def.material.TestMaterial@6574b225</td></tr>
+<tr>
+<td title='def.material.TestMaterial.testMaterialPost()'><b>testMaterialPost</b><br>Test class: def.material.TestMaterial<br>Parameters: material7969, test0002, 200, 创建有编码有名称的物料</td>
+<td></td>
+<td>0</td>
+<td>def.material.TestMaterial@6574b225</td></tr>
+<tr>
+<td title='def.material.TestMaterial.testMaterialPost()'><b>testMaterialPost</b><br>Test class: def.material.TestMaterial<br>Parameters: material7969, 7969, 400, 创建编码重复的物料</td>
+<td></td>
+<td>0</td>
+<td>def.material.TestMaterial@6574b225</td></tr>
+<tr>
+<td title='def.material.TestMaterial.testMaterialStatus()'><b>testMaterialStatus</b><br>Test class: def.material.TestMaterial<br>Parameters: 3359, 3359, 1, 创建状态为启用中的物料</td>
+<td></td>
+<td>0</td>
+<td>def.material.TestMaterial@6574b225</td></tr>
+<tr>
+<td title='def.material.TestMaterial.testMaterialStatus()'><b>testMaterialStatus</b><br>Test class: def.material.TestMaterial<br>Parameters: 33591, 3359, 0, 创建状态为停用中的物料</td>
+<td></td>
+<td>0</td>
+<td>def.material.TestMaterial@6574b225</td></tr>
+<tr>
+<td title='materialLot.aplit.TestSplit.testSplitPost()'><b>testSplitPost</b><br>Test class: materialLot.aplit.TestSplit<br>Parameters: 6287, [targets{code='51722',amount='1'}], 该二维码是物料二维码, 请扫描空码进行拆分, 拆分到非空二维码中</td>
+<td></td>
+<td>0</td>
+<td>materialLot.aplit.TestSplit@2344fc66</td></tr>
+<tr>
+<td title='materialLot.aplit.TestSplit.testSplitPost()'><b>testSplitPost</b><br>Test class: materialLot.aplit.TestSplit<br>Parameters: 6287, [targets{code='517210',amount='100'}], 成功, 拆分到原二维码数量等于0的二维码中</td>
+<td></td>
+<td>0</td>
+<td>materialLot.aplit.TestSplit@2344fc66</td></tr>
+<tr>
+<td title='materialLot.aplit.TestSplit.testSplitPost()'><b>testSplitPost</b><br>Test class: materialLot.aplit.TestSplit<br>Parameters: 6287, [targets{code='517210',amount='0'}], 物料拆分后的新物料数量必须大于零, 拆分的新二维码数量大于0</td>
+<td></td>
+<td>0</td>
+<td>materialLot.aplit.TestSplit@2344fc66</td></tr>
+<tr>
+<td title='materialLot.aplit.TestSplit.testSplitPost()'><b>testSplitPost</b><br>Test class: materialLot.aplit.TestSplit<br>Parameters: 6288, [targets{code='517211',amount='1'}, targets{code='517212',amount='1'}], 成功, 拆分到原二维码数量大余0的多个二维码中</td>
+<td></td>
+<td>0</td>
+<td>materialLot.aplit.TestSplit@2344fc66</td></tr>
+<tr>
+<td title='materialLot.transfer.TestTransfer.testTransferPost()'><b>testTransferPost</b><br>Test class: materialLot.transfer.TestTransfer<br>Parameters: 1321, [I@470a9030, [I@66d57c1b, 成功, 物料转移</td>
+<td></td>
+<td>0</td>
+<td>materialLot.transfer.TestTransfer@458ad742</td></tr>
+<tr>
+<td title='materialLot.transfer.TestTransfer.testTransferPost()'><b>testTransferPost</b><br>Test class: materialLot.transfer.TestTransfer<br>Parameters: 1321, [I@470a9030, [I@66d57c1b, 已经在要转运的目的仓库中, 物料二维码位置与转移位置相同</td>
+<td></td>
+<td>0</td>
+<td>materialLot.transfer.TestTransfer@458ad742</td></tr>
+<tr>
+<td title='materialLot.transfer.TestTransfer.testTransferPost()'><b>testTransferPost</b><br>Test class: materialLot.transfer.TestTransfer<br>Parameters: 1321, [I@470a9030, [I@66d57c1b, 已经在要转运的目的仓库中, 物料二维码位置与转移位置相同</td>
+<td></td>
+<td>0</td>
+<td>materialLot.transfer.TestTransfer@458ad742</td></tr>
+<tr>
+<td title='def.unit.TestUnit.testUnitPost()'><b>testUnitPost</b><br>Test class: def.unit.TestUnit<br>Parameters: unit1200, , 200, 创建有名称没有描述的单位</td>
+<td></td>
+<td>1</td>
+<td>def.unit.TestUnit@5cc7c2a6</td></tr>
+<tr>
+<td title='def.unit.TestUnit.testUnitPost()'><b>testUnitPost</b><br>Test class: def.unit.TestUnit<br>Parameters: , test0001, 400, 创建无名称有描述的单位</td>
+<td></td>
+<td>0</td>
+<td>def.unit.TestUnit@5cc7c2a6</td></tr>
+<tr>
+<td title='def.unit.TestUnit.testUnitPost()'><b>testUnitPost</b><br>Test class: def.unit.TestUnit<br>Parameters: unit11200, test0002, 200, 创建有名称有描述的单位</td>
+<td></td>
+<td>0</td>
+<td>def.unit.TestUnit@5cc7c2a6</td></tr>
+<tr>
+<td title='def.unit.TestUnit.testUnitPost()'><b>testUnitPost</b><br>Test class: def.unit.TestUnit<br>Parameters: unit1200, test00023, 400, 创建名称重复的单位</td>
+<td></td>
+<td>0</td>
+<td>def.unit.TestUnit@5cc7c2a6</td></tr>
+<tr>
+<td title='def.warehouse.TestWarehouse.testwarehousePost()'><b>testwarehousePost</b><br>Test class: def.warehouse.TestWarehouse<br>Parameters: warehouse3013, , 1, 400, 创建有编码没有名称的仓库</td>
+<td></td>
+<td>0</td>
+<td>def.warehouse.TestWarehouse@5056dfcb</td></tr>
+<tr>
+<td title='def.warehouse.TestWarehouse.testwarehousePost()'><b>testwarehousePost</b><br>Test class: def.warehouse.TestWarehouse<br>Parameters: , 3013, 1, 400, 创建无编码有名称的仓库</td>
+<td></td>
+<td>0</td>
+<td>def.warehouse.TestWarehouse@5056dfcb</td></tr>
+<tr>
+<td title='def.warehouse.TestWarehouse.testwarehousePost()'><b>testwarehousePost</b><br>Test class: def.warehouse.TestWarehouse<br>Parameters: warehouse3013, 3013, 1, 200, 创建有编码有名称的仓库</td>
+<td></td>
+<td>0</td>
+<td>def.warehouse.TestWarehouse@5056dfcb</td></tr>
+<tr>
+<td title='def.warehouse.TestWarehouse.testwarehousePost()'><b>testwarehousePost</b><br>Test class: def.warehouse.TestWarehouse<br>Parameters: warehouse3013, 3013, 1, 400, 创建编码重复的仓库</td>
+<td></td>
+<td>0</td>
+<td>def.warehouse.TestWarehouse@5056dfcb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='def.warehouse.TestStorage1.testStorage1Post()'><b>testStorage1Post</b><br>Test class: def.warehouse.TestStorage1</td>
+<td><div><pre>java.lang.RuntimeException: java.net.UnknownHostException: def-feature.test.blacklake.techwarehouse
+Caused by: java.net.UnknownHostException: def-feature.test.blacklake.techwarehouse
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2122)
+	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1269)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1725)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1731)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:172)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at request.RequestObject.testPost(RequestObject.java:52)
+	at utils.def.WarehouseMethod.createWarehouse(WarehouseMethod.java:25)
+	at Params.def.StorageParams.getStorage1(StorageParams.java:23)
+	... 32 more
+... Removed 55 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2111882926", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2111882926'><pre>java.lang.RuntimeException: java.net.UnknownHostException: def-feature.test.blacklake.techwarehouse
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.UnknownHostException: def-feature.test.blacklake.techwarehouse
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2122)
+	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1269)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1725)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1731)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:172)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at request.RequestObject.testPost(RequestObject.java:52)
+	at utils.def.WarehouseMethod.createWarehouse(WarehouseMethod.java:25)
+	at Params.def.StorageParams.getStorage1(StorageParams.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>def.warehouse.TestStorage1@32e6e9c3</td></tr>
+<tr>
+<td title='def.warehouse.TestStorage2.testStorage2Post()'><b>testStorage2Post</b><br>Test class: def.warehouse.TestStorage2</td>
+<td><div><pre>java.lang.RuntimeException: java.net.UnknownHostException: def-feature.test.blacklake.techwarehouse: nodename nor servname provided, or not known
+Caused by: java.net.UnknownHostException: def-feature.test.blacklake.techwarehouse: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2122)
+	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1269)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1725)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1731)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:172)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at request.RequestObject.testPost(RequestObject.java:52)
+	at utils.def.WarehouseMethod.createWarehouse(WarehouseMethod.java:25)
+	at Params.def.StorageParams.getStorage2(StorageParams.java:47)
+	... 32 more
+... Removed 55 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1967617997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1967617997'><pre>java.lang.RuntimeException: java.net.UnknownHostException: def-feature.test.blacklake.techwarehouse: nodename nor servname provided, or not known
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.UnknownHostException: def-feature.test.blacklake.techwarehouse: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2122)
+	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1269)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1725)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1731)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1027)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:815)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:172)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at request.RequestObject.testPost(RequestObject.java:52)
+	at utils.def.WarehouseMethod.createWarehouse(WarehouseMethod.java:25)
+	at Params.def.StorageParams.getStorage2(StorageParams.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>def.warehouse.TestStorage2@4590c9c3</td></tr>
+</table><p>
+</body>
+</html>

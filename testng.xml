@@ -7,12 +7,12 @@
         <group name="group1" depends-on="">
         <classes>
             <!--<class name="TestUnit">-->
-            <class name="TestMaterial">
-                <methods>
+            <!--<class name="TestMaterial">-->
+                <!--<methods>-->
                     <!--<include name="testMaterialPost1"></include>-->
                     <!--<include name="testUnitGet"></include>-->
-                </methods>
-            </class>
+                <!--</methods>-->
+            <!--</class>-->
 
         </classes>
         </group>

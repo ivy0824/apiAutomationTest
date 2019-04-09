@@ -87,9 +87,11 @@ public class EBOMParams {
         rawMaterialList1.add(rawMaterial3);
         rawMaterialList1.add(rawMaterial4);
 
+        String version = (int) (Math.random() * 10000) + "";
+
         return new Object[][]{
-                {code3,code3,unitId1,1,"1001",rawMaterialList,200,"创建正常的物料列表"},
-                {code3,code3,unitId1,1,"1002",rawMaterialList1,400,"创建值为空的物料列表"},
+                {"1000003","1000003",1,1,version+"3",rawMaterialList,200,"创建正常的物料列表"},
+                {"1000003","1000003",1,1,version+"4",rawMaterialList1,400,"创建值为空的物料列表"},
         };
     }
 

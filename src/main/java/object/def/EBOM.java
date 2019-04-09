@@ -1,8 +1,11 @@
 package object.def;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+
 import java.util.ArrayList;
 
-
+//忽略序列化问题
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class EBOM {
     private String productMaterialCode;
     private String productMaterialName;

@@ -1,4 +1,4 @@
-package def.test.warehouse;
+package def.warehouse;
 
 import Params.def.StorageParams;
 import config.Environment;

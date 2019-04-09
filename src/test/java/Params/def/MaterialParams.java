@@ -11,6 +11,7 @@ public class MaterialParams {
      * 创建物料的测试数据
      * code
      * name
+     * fifo
      * statusCode
      * 测试用例描述
      * @return

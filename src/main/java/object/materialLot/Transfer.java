@@ -1,6 +1,9 @@
 package object.materialLot;
 
-import java.util.ArrayList;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+
+//忽略序列化问题
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 
 public class Transfer {
 

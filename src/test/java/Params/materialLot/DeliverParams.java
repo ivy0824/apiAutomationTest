@@ -52,7 +52,7 @@ public class DeliverParams {
     @DataProvider
     public Object[][] getDeliver(){
 
-        String qcCode = (int) (Math.random() * 100000) + "";
+        String qcCode =  (Math.random() * 100000) + "";
 
         //创建入厂的：数量，二维码，单位 数据
         ArrayList<CodesAndAmounts> codesAndAmounts = new ArrayList<CodesAndAmounts>();

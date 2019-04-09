@@ -19,7 +19,8 @@ public class StorageParams {
     @DataProvider
     public Object[][] getStorage1() {
         String code = (int) (Math.random() * 10000) + "";
-        String parentCode = WarehouseMethod.createwarehouse("warehouse"+code,code,1);
+        int[] qualityControlItems = {1,2,3,4};
+        String parentCode = WarehouseMethod.createWarehouse("warehouse"+code,code,1,qualityControlItems,true);
         return new Object[][]{
                 {"storage1" + code,"",parentCode,1, 400, "创建有编码没有名称的一级仓位"},
                 {"", code,parentCode,1, 400, "创建无编码有名称的一级仓位"},
@@ -42,7 +43,8 @@ public class StorageParams {
     @DataProvider
     public Object[][] getStorage2() {
         String code = (int) (Math.random() * 10000) + "";
-        String parentCode = WarehouseMethod.createwarehouse("warehouse"+code,code,1);
+        int[] qualityControlItems2 = {1,2,3,4};
+        String parentCode = WarehouseMethod.createWarehouse("warehouse"+code,code,1,qualityControlItems2,true);
         String storage1 = StorageMethod.createStorage1("storage1"+code,code,parentCode,1);
         return new Object[][]{
                 {"storage2" + "storage2"+code,"",storage1,2, 400, "创建有编码没有名称的二级仓位"},

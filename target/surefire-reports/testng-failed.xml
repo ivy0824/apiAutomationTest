@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="def.warehouse.TestStorage1">
+        <methods>
+          <include name="testStorage1Post"/>
+        </methods>
+      </class> <!-- def.warehouse.TestStorage1 -->
+      <class name="def.warehouse.TestStorage2">
+        <methods>
+          <include name="testStorage2Post"/>
+        </methods>
+      </class> <!-- def.warehouse.TestStorage2 -->
+      <class name="def.eBOM.TestEBOM">
+        <methods>
+          <include name="testEBOMPost1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- def.eBOM.TestEBOM -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

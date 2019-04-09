@@ -1,5 +1,9 @@
 package object.def;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+
+//忽略序列化问题
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class RawMaterial {
     private String amount;
     private String lossRate;

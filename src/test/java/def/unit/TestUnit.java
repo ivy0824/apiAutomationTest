@@ -1,4 +1,4 @@
-package def.test.unit;
+package def.unit;
 
 import Params.def.UnitParams;
 import config.Environment;
@@ -21,11 +21,11 @@ public class TestUnit {
 
     }
 
-    @Test
-    public void testUnitGet(){
-        HashMap<String,String> params=new HashMap<String, String>();
-//        RequestObject.getStatus(RequestObject.testGet("unit",params),200);
-        RequestObject.getResponseMessage(RequestObject.testGet(Environment.server_def,"/v1/unit",params),"data.name", "单位8248");
-    }
+//    @Test
+//    public void testUnitGet(){
+//        HashMap<String,String> params=new HashMap<String, String>();
+////        RequestObject.getStatus(RequestObject.testGet("unit",params),200);
+//        RequestObject.getResponseMessage(RequestObject.testGet(Environment.server_def,"/v1/unit",params),"data.name", "单位8248");
+//    }
 
 }

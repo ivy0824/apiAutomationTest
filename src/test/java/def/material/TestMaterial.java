@@ -1,4 +1,4 @@
-package def.test.material;
+package def.material;
 
 import Params.def.MaterialParams;
 import config.Environment;
@@ -37,31 +37,32 @@ public class TestMaterial {
         body.put("name", name);
         body.put("status", "1");
         body.put("unitId",unitId);
+        body.put("fifo","false");
         HashMap<String, String> params = new HashMap<String, String>();
         RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"/v1/material", body, params), statusCode);
     }
 
-    /**
-     * 用excel数据测试
-     * @param code
-     * @param name
-     * @param statusCode
-     */
-    @Test(dataProvider = "getMaterial1",dataProviderClass = MaterialParams.class)
-    public void testMaterialPost1(String code,String name,String statusCode) {
-        HashMap<String, String> body = new HashMap<String, String>();
-//        System.out.println("----------" + msg + "----------");
-        body.put("code", code);
-        body.put("name", name);
-        body.put("status", "1");
-        body.put("unitId",unitId);
-        HashMap<String, String> params = new HashMap<String, String>();
-        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"/v1/material", body, params),Integer.valueOf(statusCode).intValue());
-    }
+//    /**
+//     * 用excel数据测试
+//     * @param code
+//     * @param name
+//     * @param statusCode
+//     */
+//    @Test(dataProvider = "getMaterial1",dataProviderClass = MaterialParams.class)
+//    public void testMaterialPost1(String code,String name,String statusCode) {
+//        HashMap<String, String> body = new HashMap<String, String>();
+////        System.out.println("----------" + msg + "----------");
+//        body.put("code", code);
+//        body.put("name", name);
+//        body.put("status", "1");
+//        body.put("unitId",unitId);
+//        HashMap<String, String> params = new HashMap<String, String>();
+//        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"/v1/material", body, params),Integer.valueOf(statusCode).intValue());
+//    }
 
 
     /**
-     * 测试创建单位后状态的返回值是否正确
+     * 测试创建物料后状态的返回值是否正确
      * @param code
      * @param name
      * @param status
@@ -75,6 +76,7 @@ public class TestMaterial {
         body.put("name", name);
         body.put("status", status+"");
         body.put("unitId",unitId);
+        body.put("fifo","false");
         HashMap<String, String> params = new HashMap<String, String>();
         RequestObject.getResponseMessage(RequestObject.testPost(Environment.server_def,"/v1/material", body, params), "data.status", status);
     }

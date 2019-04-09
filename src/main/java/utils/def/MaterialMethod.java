@@ -23,6 +23,7 @@ public class MaterialMethod {
         body.put("name", "material" + name);
         body.put("status", "1");
         body.put("unitId", unitId);
+        body.put("fifo","false");
         HashMap<String, String> params = new HashMap<String, String>();
         String materialResponse = RequestObject.testPost(Environment.server_def,"material", body, params).extract().path(jsonPath);
         return materialResponse;
@@ -62,6 +63,7 @@ public class MaterialMethod {
         body.put("name", "material" + name);
         body.put("status", "1");
         body.put("unitId", unitId);
+        body.put("fifo","false");
         HashMap<String, String> params = new HashMap<String, String>();
         RequestObject.testPost(Environment.server_def,"material", body, params);
     }

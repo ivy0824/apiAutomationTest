@@ -1,4 +1,4 @@
-package def.test.eBOM;
+package def.eBOM;
 
 import config.Environment;
 import object.def.EBOM;

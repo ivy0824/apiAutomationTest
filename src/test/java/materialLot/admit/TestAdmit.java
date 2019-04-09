@@ -7,13 +7,14 @@ import object.materialLot.OriginPlace;
 import org.testng.annotations.Test;
 import request.RequestObject;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 
 public class TestAdmit {
 
     @Test(dataProvider= "getAdmit",dataProviderClass = AdmitParams.class)
-    private void testAdmitPost(String materialCode, ArrayList codesAndAmounts, ArrayList mfgBatches, Object storageId, String validityPeriod, String supplierCode, HashMap originPlace, String remark,int statusCode, String msg){
+    private void testAdmitPost(String materialCode, ArrayList codesAndAmounts, ArrayList mfgBatches, Object storageId, Date validityPeriod, String supplierCode, OriginPlace originPlace, String remark, int statusCode, String msg){
 
         System.out.println("----------" + msg + "----------");
 
@@ -24,7 +25,5 @@ public class TestAdmit {
         RequestObject.getStatus(RequestObject.testPost(Environment.server_manufacture,"/v2/materialLot/_admit",admit,params),statusCode);
 
     }
-
-
 
 }

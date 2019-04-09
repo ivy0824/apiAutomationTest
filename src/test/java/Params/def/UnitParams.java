@@ -18,7 +18,7 @@ public class UnitParams {
         return new Object[][]{
                 {"unit"+name,"",200,"创建有名称没有描述的单位"},
                 {"","test0001",400,"创建无名称有描述的单位"},
-                {"unit"+name,"test0002",200,"创建有名称有描述的单位"},
+                {"unit1"+name,"test0002",200,"创建有名称有描述的单位"},
                 {"unit"+name,"test00023",400,"创建名称重复的单位"}
 
         };

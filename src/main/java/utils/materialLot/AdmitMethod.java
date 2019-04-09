@@ -1,15 +1,14 @@
 package utils.materialLot;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import config.Environment;
 import object.materialLot.Admit;
-import object.materialLot.OriginPlace;
 import request.RequestObject;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import static request.RequestObject.testPost;
-
+//忽略序列化问题
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class AdmitMethod {
 
     public static HashMap<String,Integer> admit(String materialCode, ArrayList codesAndAmounts, Object storageId){

@@ -1,6 +1,9 @@
 package object.materialLot;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 /*
@@ -13,23 +16,25 @@ import java.util.HashMap;
  * originPlace
  * remark
  */
+//忽略序列化问题
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 
 public class Admit {
 
     private String materialCode;
-    private ArrayList<CodesAndAmounts> codesAndAmounts;
-    private ArrayList<MfgBatches> MfgBatches;
+    private ArrayList<CodeAndAmount> codesAndAmounts;
+    private ArrayList<MfgBatches> mfgBatches;
     private Object storageId;
-    private String validityPeriod;
+    private Date validityPeriod;
     private String supplierCode;
-    private HashMap originPlace;
+    private OriginPlace originPlace;
     private String remark;
 
 
-    public void admitAll(String materialCode, ArrayList<CodesAndAmounts> codesAndAmounts,ArrayList<MfgBatches> MfgBatches, Object storageId,String validityPeriod,String supplierCode,HashMap originPlace,String remark ) {
+    public void admitAll(String materialCode, ArrayList<CodeAndAmount> codesAndAmounts,ArrayList<MfgBatches> MfgBatches, Object storageId,Date validityPeriod,String supplierCode,OriginPlace originPlace,String remark ) {
         this.materialCode = materialCode;
         this.codesAndAmounts = codesAndAmounts;
-        this.MfgBatches = MfgBatches;
+        this.mfgBatches = MfgBatches;
         this.storageId = storageId;
         this.validityPeriod = validityPeriod;
         this.supplierCode = supplierCode;
@@ -37,7 +42,7 @@ public class Admit {
         this.remark = remark;
     }
 
-    public void admitNeed(String materialCode, ArrayList<CodesAndAmounts> codesAndAmounts, Object storageId ) {
+    public void admitNeed(String materialCode, ArrayList<CodeAndAmount> codesAndAmounts, Object storageId ) {
         this.materialCode = materialCode;
         this.codesAndAmounts = codesAndAmounts;
         this.storageId = storageId;
@@ -49,7 +54,7 @@ public class Admit {
         return "Admit{" +
                 "materialCode='" + materialCode + '\'' +
                 ",codesAndAmounts='" + codesAndAmounts + '\'' +
-                ",MfgBatches;" + MfgBatches + '\''+
+                ",MfgBatches;" + mfgBatches + '\''+
                 ", storageId=" + storageId + '\'' +
                 ", validityPeriod=" + validityPeriod + '\'' +
                 ", supplierCode=" + supplierCode + '\'' +

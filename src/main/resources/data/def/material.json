@@ -1,0 +1,25 @@
+{
+  "code": "123"
+//  "name": "null",
+//  "desc": "null",
+//  "status": 1,
+//  "unitId": "null",
+//  "unitConversions": [
+//    {
+//      "masterUnitCount": "null",
+//      "materialCode": "null",
+//      "slaveUnitCount": "null",
+//      "slaveUnitDesc": "null",
+//      "slaveUnitId": "null",
+//      "slaveUnitName": "null"
+//    }
+//  ],
+//  "replaceMaterialList": [
+//    "null"
+//  ],
+//  "fifo": true
+//  "validTime": null,
+//  "warningTime": null,
+//  "proUseUnitId": null,
+//  "proHoldUnitId": null
+}
