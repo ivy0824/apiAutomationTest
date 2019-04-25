@@ -1,108 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" ignored="0" total="50" passed="47">
+<testng-results skipped="6" failed="17" ignored="0" total="45" passed="22">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="24961" started-at="2019-03-20T08:54:16Z" finished-at="2019-03-20T08:54:41Z">
+  <suite name="Command line suite" duration-ms="18902" started-at="2019-04-02T07:52:55Z" finished-at="2019-04-02T07:53:14Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="24961" started-at="2019-03-20T08:54:16Z" finished-at="2019-03-20T08:54:41Z">
+    <test name="Command line test" duration-ms="18902" started-at="2019-04-02T07:52:55Z" finished-at="2019-04-02T07:53:14Z">
       <class name="materialLot.transfer.TestTransfer">
-        <test-method status="PASS" signature="testTransferPost(int, [I, [I, java.lang.String, java.lang.String)[pri:0, instance:materialLot.transfer.TestTransfer@458ad742]" name="testTransferPost" duration-ms="660" started-at="2019-03-20T08:54:29Z" data-provider="getTransfer" finished-at="2019-03-20T08:54:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1321]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[I@470a9030]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[I@66d57c1b]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[成功]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[物料转移]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTransferPost -->
-        <test-method status="PASS" signature="testTransferPost(int, [I, [I, java.lang.String, java.lang.String)[pri:0, instance:materialLot.transfer.TestTransfer@458ad742]" name="testTransferPost" duration-ms="287" started-at="2019-03-20T08:54:30Z" data-provider="getTransfer" finished-at="2019-03-20T08:54:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1321]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[I@470a9030]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[I@66d57c1b]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[已经在要转运的目的仓库中]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[物料二维码位置与转移位置相同]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTransferPost -->
-        <test-method status="PASS" signature="testTransferPost(int, [I, [I, java.lang.String, java.lang.String)[pri:0, instance:materialLot.transfer.TestTransfer@458ad742]" name="testTransferPost" duration-ms="240" started-at="2019-03-20T08:54:30Z" data-provider="getTransfer" finished-at="2019-03-20T08:54:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1321]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[I@470a9030]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[I@66d57c1b]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[已经在要转运的目的仓库中]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[物料二维码位置与转移位置相同]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="testTransferPost(int, [I, [I, java.lang.String, java.lang.String)[pri:0, instance:materialLot.transfer.TestTransfer@7ac7a4e4]" name="testTransferPost" duration-ms="0" started-at="2019-04-02T07:53:03Z" data-provider="getTransfer" finished-at="2019-04-02T07:53:03Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+at Params.materialLot.TransferParams.getTransfer(TransferParams.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransferPost -->
       </class> <!-- materialLot.transfer.TestTransfer -->
       <class name="def.warehouse.TestStorage2">
-        <test-method status="SKIP" signature="testStorage2Post(java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestStorage2@4590c9c3]" name="testStorage2Post" duration-ms="0" started-at="2019-03-20T08:54:20Z" data-provider="getStorage2" finished-at="2019-03-20T08:54:20Z">
+        <test-method status="SKIP" signature="testStorage2Post(java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestStorage2@48eff760]" name="testStorage2Post" duration-ms="0" started-at="2019-04-02T07:53:02Z" data-provider="getStorage2" finished-at="2019-04-02T07:53:02Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.net.UnknownHostException: def-feature.test.blacklake.techwarehouse: nodename nor servname provided, or not known]]>
@@ -216,7 +179,7 @@ at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoIn
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
 at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:172)
 at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-at request.RequestObject.testPost(RequestObject.java:52)
+at utils.common.RequestObject.testPost(RequestObject.java:56)
 at utils.def.WarehouseMethod.createWarehouse(WarehouseMethod.java:25)
 at Params.def.StorageParams.getStorage2(StorageParams.java:47)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -234,122 +197,16 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           </reporter-output>
         </test-method> <!-- testStorage2Post -->
       </class> <!-- def.warehouse.TestStorage2 -->
-      <class name="materialLot.aplit.TestSplit">
-        <test-method status="PASS" signature="testSplitPost(int, java.util.ArrayList, java.lang.String, java.lang.String)[pri:0, instance:materialLot.aplit.TestSplit@2344fc66]" name="testSplitPost" duration-ms="358" started-at="2019-03-20T08:54:27Z" data-provider="getSplit" finished-at="2019-03-20T08:54:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6287]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[targets{code='51722',amount='1'}]]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[该二维码是物料二维码, 请扫描空码进行拆分]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[拆分到非空二维码中]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSplitPost -->
-        <test-method status="PASS" signature="testSplitPost(int, java.util.ArrayList, java.lang.String, java.lang.String)[pri:0, instance:materialLot.aplit.TestSplit@2344fc66]" name="testSplitPost" duration-ms="582" started-at="2019-03-20T08:54:27Z" data-provider="getSplit" finished-at="2019-03-20T08:54:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6287]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[targets{code='517210',amount='100'}]]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[成功]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[拆分到原二维码数量等于0的二维码中]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSplitPost -->
-        <test-method status="PASS" signature="testSplitPost(int, java.util.ArrayList, java.lang.String, java.lang.String)[pri:0, instance:materialLot.aplit.TestSplit@2344fc66]" name="testSplitPost" duration-ms="286" started-at="2019-03-20T08:54:28Z" data-provider="getSplit" finished-at="2019-03-20T08:54:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6287]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[targets{code='517210',amount='0'}]]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[物料拆分后的新物料数量必须大于零]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[拆分的新二维码数量大于0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSplitPost -->
-        <test-method status="PASS" signature="testSplitPost(int, java.util.ArrayList, java.lang.String, java.lang.String)[pri:0, instance:materialLot.aplit.TestSplit@2344fc66]" name="testSplitPost" duration-ms="683" started-at="2019-03-20T08:54:28Z" data-provider="getSplit" finished-at="2019-03-20T08:54:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6288]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[targets{code='517211',amount='1'}, targets{code='517212',amount='1'}]]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[成功]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[拆分到原二维码数量大余0的多个二维码中]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSplitPost -->
-      </class> <!-- materialLot.aplit.TestSplit -->
       <class name="def.material.TestMaterial">
-        <test-method status="PASS" signature="getUnitId()[pri:0, instance:def.material.TestMaterial@6574b225]" name="getUnitId" is-config="true" duration-ms="514" started-at="2019-03-20T08:54:21Z" finished-at="2019-03-20T08:54:21Z">
+        <test-method status="PASS" signature="getUnitId()[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="getUnitId" is-config="true" duration-ms="318" started-at="2019-04-02T07:53:07Z" finished-at="2019-04-02T07:53:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUnitId -->
-        <test-method status="PASS" signature="testMaterialPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@6574b225]" name="testMaterialPost" duration-ms="211" started-at="2019-03-20T08:54:21Z" data-provider="getMaterial" finished-at="2019-03-20T08:54:22Z">
+        <test-method status="PASS" signature="testMaterialPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialPost" duration-ms="298" started-at="2019-04-02T07:53:08Z" data-provider="getMaterial" finished-at="2019-04-02T07:53:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[material17969]]>
+                <![CDATA[material1510]]>
               </value>
             </param>
             <param index="1">
@@ -371,7 +228,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMaterialPost -->
-        <test-method status="PASS" signature="testMaterialPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@6574b225]" name="testMaterialPost" duration-ms="285" started-at="2019-03-20T08:54:22Z" data-provider="getMaterial" finished-at="2019-03-20T08:54:22Z">
+        <test-method status="PASS" signature="testMaterialPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialPost" duration-ms="298" started-at="2019-04-02T07:53:08Z" data-provider="getMaterial" finished-at="2019-04-02T07:53:08Z">
           <params>
             <param index="0">
               <value>
@@ -380,7 +237,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
             </param>
             <param index="1">
               <value>
-                <![CDATA[7969]]>
+                <![CDATA[510]]>
               </value>
             </param>
             <param index="2">
@@ -397,11 +254,11 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMaterialPost -->
-        <test-method status="PASS" signature="testMaterialPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@6574b225]" name="testMaterialPost" duration-ms="404" started-at="2019-03-20T08:54:22Z" data-provider="getMaterial" finished-at="2019-03-20T08:54:22Z">
+        <test-method status="FAIL" signature="testMaterialPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialPost" duration-ms="341" started-at="2019-04-02T07:53:08Z" data-provider="getMaterial" finished-at="2019-04-02T07:53:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[material7969]]>
+                <![CDATA[material510]]>
               </value>
             </param>
             <param index="1">
@@ -420,19 +277,90 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <400>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at def.material.TestMaterial.testMaterialPost(TestMaterial.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMaterialPost -->
-        <test-method status="PASS" signature="testMaterialPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@6574b225]" name="testMaterialPost" duration-ms="280" started-at="2019-03-20T08:54:22Z" data-provider="getMaterial" finished-at="2019-03-20T08:54:23Z">
+        <test-method status="PASS" signature="testMaterialPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialPost" duration-ms="326" started-at="2019-04-02T07:53:09Z" data-provider="getMaterial" finished-at="2019-04-02T07:53:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[material7969]]>
+                <![CDATA[material510]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[7969]]>
+                <![CDATA[510]]>
               </value>
             </param>
             <param index="2">
@@ -449,16 +377,329 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMaterialPost -->
-        <test-method status="PASS" signature="testMaterialStatus(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@6574b225]" name="testMaterialStatus" duration-ms="367" started-at="2019-03-20T08:54:23Z" data-provider="getMaterialStatus" finished-at="2019-03-20T08:54:23Z">
+        <test-method status="FAIL" signature="testMaterialPost1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialPost1" duration-ms="323" started-at="2019-04-02T07:53:09Z" data-provider="getMaterialWithCSV" finished-at="2019-04-02T07:53:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3359]]>
+                <![CDATA[32501]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[3359]]>
+                <![CDATA[ 32501]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ 200]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: " 200"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: " 200"
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:569)
+at java.lang.Integer.parseInt(Integer.java:615)
+at def.material.TestMaterial.testMaterialPost1(TestMaterial.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaterialPost1 -->
+        <test-method status="FAIL" signature="testMaterialPost1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialPost1" duration-ms="377" started-at="2019-04-02T07:53:09Z" data-provider="getMaterialWithCSV" finished-at="2019-04-02T07:53:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[32502]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ 32502]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ 200]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: " 200"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: " 200"
+at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+at java.lang.Integer.parseInt(Integer.java:569)
+at java.lang.Integer.parseInt(Integer.java:615)
+at def.material.TestMaterial.testMaterialPost1(TestMaterial.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaterialPost1 -->
+        <test-method status="PASS" signature="testMaterialPost3(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialPost3" duration-ms="297" started-at="2019-04-02T07:53:10Z" data-provider="getMaterial" finished-at="2019-04-02T07:53:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[material15352]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[创建有编码没有名称的物料]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaterialPost3 -->
+        <test-method status="PASS" signature="testMaterialPost3(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialPost3" duration-ms="303" started-at="2019-04-02T07:53:10Z" data-provider="getMaterial" finished-at="2019-04-02T07:53:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5352]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[创建无编码有名称的物料]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaterialPost3 -->
+        <test-method status="FAIL" signature="testMaterialPost3(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialPost3" duration-ms="307" started-at="2019-04-02T07:53:10Z" data-provider="getMaterial" finished-at="2019-04-02T07:53:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[material5352]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test0002]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[创建有编码有名称的物料]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <400>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at def.material.TestMaterial.testMaterialPost3(TestMaterial.java:117)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaterialPost3 -->
+        <test-method status="PASS" signature="testMaterialPost3(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialPost3" duration-ms="296" started-at="2019-04-02T07:53:11Z" data-provider="getMaterial" finished-at="2019-04-02T07:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[material5352]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5352]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[创建编码重复的物料]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaterialPost3 -->
+        <test-method status="FAIL" signature="testMaterialStatus(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialStatus" duration-ms="350" started-at="2019-04-02T07:53:11Z" data-provider="getMaterialStatus" finished-at="2019-04-02T07:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8924]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8924]]>
               </value>
             </param>
             <param index="2">
@@ -472,19 +713,99 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path data.status doesn't match.
+Expected: <1>
+  Actual: null
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path data.status doesn't match.
+Expected: <1>
+  Actual: null
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:265)
+at io.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:190)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:248)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+at utils.common.RequestObject.getResponseMessage(RequestObject.java:90)
+at def.material.TestMaterial.testMaterialStatus(TestMaterial.java:139)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMaterialStatus -->
-        <test-method status="PASS" signature="testMaterialStatus(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@6574b225]" name="testMaterialStatus" duration-ms="341" started-at="2019-03-20T08:54:23Z" data-provider="getMaterialStatus" finished-at="2019-03-20T08:54:23Z">
+        <test-method status="FAIL" signature="testMaterialStatus(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.material.TestMaterial@5ae9a829]" name="testMaterialStatus" duration-ms="325" started-at="2019-04-02T07:53:11Z" data-provider="getMaterialStatus" finished-at="2019-04-02T07:53:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[33591]]>
+                <![CDATA[89241]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[3359]]>
+                <![CDATA[8924]]>
               </value>
             </param>
             <param index="2">
@@ -498,12 +819,145 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path data.status doesn't match.
+Expected: <0>
+  Actual: null
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path data.status doesn't match.
+Expected: <0>
+  Actual: null
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:265)
+at io.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:248)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+at utils.common.RequestObject.getResponseMessage(RequestObject.java:90)
+at def.material.TestMaterial.testMaterialStatus(TestMaterial.java:139)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMaterialStatus -->
       </class> <!-- def.material.TestMaterial -->
+      <class name="materialLot.aplit.TestSplit">
+        <test-method status="SKIP" signature="testSplitPost(int, java.util.ArrayList, java.lang.String, java.lang.String)[pri:0, instance:materialLot.aplit.TestSplit@548b7f67]" name="testSplitPost" duration-ms="0" started-at="2019-04-02T07:53:01Z" data-provider="getSplit" finished-at="2019-04-02T07:53:01Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+at Params.materialLot.SplitParams.getSplit(SplitParams.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSplitPost -->
+      </class> <!-- materialLot.aplit.TestSplit -->
       <class name="def.warehouse.TestStorage1">
-        <test-method status="SKIP" signature="testStorage1Post(java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestStorage1@32e6e9c3]" name="testStorage1Post" duration-ms="0" started-at="2019-03-20T08:54:20Z" data-provider="getStorage1" finished-at="2019-03-20T08:54:20Z">
+        <test-method status="SKIP" signature="testStorage1Post(java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestStorage1@402f32ff]" name="testStorage1Post" duration-ms="0" started-at="2019-04-02T07:53:03Z" data-provider="getStorage1" finished-at="2019-04-02T07:53:03Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.net.UnknownHostException: def-feature.test.blacklake.techwarehouse]]>
@@ -614,7 +1068,7 @@ at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoIn
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
 at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:172)
 at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-at request.RequestObject.testPost(RequestObject.java:52)
+at utils.common.RequestObject.testPost(RequestObject.java:56)
 at utils.def.WarehouseMethod.createWarehouse(WarehouseMethod.java:25)
 at Params.def.StorageParams.getStorage1(StorageParams.java:23)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -633,11 +1087,11 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
         </test-method> <!-- testStorage1Post -->
       </class> <!-- def.warehouse.TestStorage1 -->
       <class name="def.unit.TestUnit">
-        <test-method status="PASS" signature="testUnitPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.unit.TestUnit@5cc7c2a6]" name="testUnitPost" duration-ms="1601" started-at="2019-03-20T08:54:16Z" data-provider="getUnit" finished-at="2019-03-20T08:54:17Z">
+        <test-method status="PASS" signature="testUnitPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.unit.TestUnit@3c756e4d]" name="testUnitPost" duration-ms="369" started-at="2019-04-02T07:52:58Z" data-provider="getUnit" finished-at="2019-04-02T07:52:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[unit1200]]>
+                <![CDATA[unit6374]]>
               </value>
             </param>
             <param index="1">
@@ -659,7 +1113,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUnitPost -->
-        <test-method status="PASS" signature="testUnitPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.unit.TestUnit@5cc7c2a6]" name="testUnitPost" duration-ms="225" started-at="2019-03-20T08:54:17Z" data-provider="getUnit" finished-at="2019-03-20T08:54:17Z">
+        <test-method status="PASS" signature="testUnitPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.unit.TestUnit@3c756e4d]" name="testUnitPost" duration-ms="293" started-at="2019-04-02T07:52:58Z" data-provider="getUnit" finished-at="2019-04-02T07:52:58Z">
           <params>
             <param index="0">
               <value>
@@ -685,11 +1139,11 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUnitPost -->
-        <test-method status="PASS" signature="testUnitPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.unit.TestUnit@5cc7c2a6]" name="testUnitPost" duration-ms="283" started-at="2019-03-20T08:54:17Z" data-provider="getUnit" finished-at="2019-03-20T08:54:18Z">
+        <test-method status="PASS" signature="testUnitPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.unit.TestUnit@3c756e4d]" name="testUnitPost" duration-ms="308" started-at="2019-04-02T07:52:58Z" data-provider="getUnit" finished-at="2019-04-02T07:52:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[unit11200]]>
+                <![CDATA[unit16374]]>
               </value>
             </param>
             <param index="1">
@@ -711,11 +1165,11 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUnitPost -->
-        <test-method status="PASS" signature="testUnitPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.unit.TestUnit@5cc7c2a6]" name="testUnitPost" duration-ms="287" started-at="2019-03-20T08:54:18Z" data-provider="getUnit" finished-at="2019-03-20T08:54:18Z">
+        <test-method status="PASS" signature="testUnitPost(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:def.unit.TestUnit@3c756e4d]" name="testUnitPost" duration-ms="604" started-at="2019-04-02T07:52:59Z" data-provider="getUnit" finished-at="2019-04-02T07:52:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[unit1200]]>
+                <![CDATA[unit6374]]>
               </value>
             </param>
             <param index="1">
@@ -739,263 +1193,127 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
         </test-method> <!-- testUnitPost -->
       </class> <!-- def.unit.TestUnit -->
       <class name="materialLot.adjust.TestAdjust">
-        <test-method status="PASS" signature="testAdjustPost(int, java.lang.String, int, int, java.lang.String, java.lang.String)[pri:0, instance:materialLot.adjust.TestAdjust@2669b199]" name="testAdjustPost" duration-ms="622" started-at="2019-03-20T08:54:24Z" data-provider="getAdjust" finished-at="2019-03-20T08:54:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6286]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adjust1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[-10]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[成功]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[物料调整数量减少]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAdjustPost -->
-        <test-method status="PASS" signature="testAdjustPost(int, java.lang.String, int, int, java.lang.String, java.lang.String)[pri:0, instance:materialLot.adjust.TestAdjust@2669b199]" name="testAdjustPost" duration-ms="587" started-at="2019-03-20T08:54:25Z" data-provider="getAdjust" finished-at="2019-03-20T08:54:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6286]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adjust1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[90]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[成功]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[物料调整数量增加]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAdjustPost -->
-        <test-method status="PASS" signature="testAdjustPost(int, java.lang.String, int, int, java.lang.String, java.lang.String)[pri:0, instance:materialLot.adjust.TestAdjust@2669b199]" name="testAdjustPost" duration-ms="433" started-at="2019-03-20T08:54:25Z" data-provider="getAdjust" finished-at="2019-03-20T08:54:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6286]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adjust1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[-200]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[物料数量不能为负]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[物料调整数量为负数]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAdjustPost -->
-        <test-method status="PASS" signature="testAdjustPost(int, java.lang.String, int, int, java.lang.String, java.lang.String)[pri:0, instance:materialLot.adjust.TestAdjust@2669b199]" name="testAdjustPost" duration-ms="487" started-at="2019-03-20T08:54:26Z" data-provider="getAdjust" finished-at="2019-03-20T08:54:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6286]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adjust1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[-100]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[成功]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[物料调整数量为0]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="testAdjustPost(int, java.lang.String, int, int, java.lang.String, java.lang.String)[pri:0, instance:materialLot.adjust.TestAdjust@6d8a00e3]" name="testAdjustPost" duration-ms="0" started-at="2019-04-02T07:52:58Z" data-provider="getAdjust" finished-at="2019-04-02T07:52:58Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+at Params.materialLot.AdjustParams.getAdjust(AdjustParams.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdjustPost -->
       </class> <!-- materialLot.adjust.TestAdjust -->
       <class name="materialLot.deliver.TestDeliver">
-        <test-method status="PASS" signature="testDelivertPost(java.lang.String, [I, int, java.lang.String)[pri:0, instance:materialLot.deliver.TestDeliver@5afa04c]" name="testDelivertPost" duration-ms="505" started-at="2019-03-20T08:54:32Z" data-provider="getDeliver" finished-at="2019-03-20T08:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1000001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[I@58f174d9]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[200]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[创建只有一个二维码的出厂数据]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDelivertPost -->
-        <test-method status="PASS" signature="testDelivertPost(java.lang.String, [I, int, java.lang.String)[pri:0, instance:materialLot.deliver.TestDeliver@5afa04c]" name="testDelivertPost" duration-ms="512" started-at="2019-03-20T08:54:33Z" data-provider="getDeliver" finished-at="2019-03-20T08:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1000001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[I@78c7f9b3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[200]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[创建两种物料二维码的出厂数据]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDelivertPost -->
-        <test-method status="PASS" signature="testDelivertPost(java.lang.String, [I, int, java.lang.String)[pri:0, instance:materialLot.deliver.TestDeliver@5afa04c]" name="testDelivertPost" duration-ms="356" started-at="2019-03-20T08:54:33Z" data-provider="getDeliver" finished-at="2019-03-20T08:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1000001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[I@58f174d9]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[400]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[创建空二维码的出厂数据]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDelivertPost -->
-        <test-method status="PASS" signature="testDelivertPost(java.lang.String, [I, int, java.lang.String)[pri:0, instance:materialLot.deliver.TestDeliver@5afa04c]" name="testDelivertPost" duration-ms="244" started-at="2019-03-20T08:54:33Z" data-provider="getDeliver" finished-at="2019-03-20T08:54:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1000001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[I@6f8d7714]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[400]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[创建没有二维码的出厂数据]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="testDelivertPost(java.lang.String, [I, int, java.lang.String)[pri:0, instance:materialLot.deliver.TestDeliver@6d78f375]" name="testDelivertPost" duration-ms="0" started-at="2019-04-02T07:53:03Z" data-provider="getDeliver" finished-at="2019-04-02T07:53:03Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException
+at Params.materialLot.DeliverParams.getDeliver(DeliverParams.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDelivertPost -->
       </class> <!-- materialLot.deliver.TestDeliver -->
       <class name="def.warehouse.TestWarehouse">
-        <test-method status="PASS" signature="testwarehousePost(java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestWarehouse@5056dfcb]" name="testwarehousePost" duration-ms="323" started-at="2019-03-20T08:54:20Z" data-provider="getWarehouse" finished-at="2019-03-20T08:54:20Z">
+        <test-method status="PASS" signature="testWarehousePost(java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestWarehouse@573f2bb1]" name="testWarehousePost" duration-ms="306" started-at="2019-04-02T07:53:06Z" data-provider="getWarehouse" finished-at="2019-04-02T07:53:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[warehouse3013]]>
+                <![CDATA[warehouse1857]]>
               </value>
             </param>
             <param index="1">
@@ -1021,8 +1339,8 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testwarehousePost -->
-        <test-method status="PASS" signature="testwarehousePost(java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestWarehouse@5056dfcb]" name="testwarehousePost" duration-ms="242" started-at="2019-03-20T08:54:20Z" data-provider="getWarehouse" finished-at="2019-03-20T08:54:20Z">
+        </test-method> <!-- testWarehousePost -->
+        <test-method status="PASS" signature="testWarehousePost(java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestWarehouse@573f2bb1]" name="testWarehousePost" duration-ms="306" started-at="2019-04-02T07:53:06Z" data-provider="getWarehouse" finished-at="2019-04-02T07:53:07Z">
           <params>
             <param index="0">
               <value>
@@ -1031,7 +1349,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
             </param>
             <param index="1">
               <value>
-                <![CDATA[3013]]>
+                <![CDATA[1857]]>
               </value>
             </param>
             <param index="2">
@@ -1052,17 +1370,17 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testwarehousePost -->
-        <test-method status="PASS" signature="testwarehousePost(java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestWarehouse@5056dfcb]" name="testwarehousePost" duration-ms="349" started-at="2019-03-20T08:54:20Z" data-provider="getWarehouse" finished-at="2019-03-20T08:54:21Z">
+        </test-method> <!-- testWarehousePost -->
+        <test-method status="PASS" signature="testWarehousePost(java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestWarehouse@573f2bb1]" name="testWarehousePost" duration-ms="323" started-at="2019-04-02T07:53:07Z" data-provider="getWarehouse" finished-at="2019-04-02T07:53:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[warehouse3013]]>
+                <![CDATA[warehouse1857]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[3013]]>
+                <![CDATA[1857]]>
               </value>
             </param>
             <param index="2">
@@ -1083,17 +1401,17 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testwarehousePost -->
-        <test-method status="PASS" signature="testwarehousePost(java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestWarehouse@5056dfcb]" name="testwarehousePost" duration-ms="284" started-at="2019-03-20T08:54:21Z" data-provider="getWarehouse" finished-at="2019-03-20T08:54:21Z">
+        </test-method> <!-- testWarehousePost -->
+        <test-method status="PASS" signature="testWarehousePost(java.lang.String, java.lang.String, int, int, java.lang.String)[pri:0, instance:def.warehouse.TestWarehouse@573f2bb1]" name="testWarehousePost" duration-ms="312" started-at="2019-04-02T07:53:07Z" data-provider="getWarehouse" finished-at="2019-04-02T07:53:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[warehouse3013]]>
+                <![CDATA[warehouse1857]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[3013]]>
+                <![CDATA[1857]]>
               </value>
             </param>
             <param index="2">
@@ -1114,10 +1432,10 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testwarehousePost -->
+        </test-method> <!-- testWarehousePost -->
       </class> <!-- def.warehouse.TestWarehouse -->
       <class name="def.eBOM.TestEBOM">
-        <test-method status="PASS" signature="testEBOMPost(java.lang.String, java.lang.String, int, int, java.lang.String, java.util.ArrayList, int, java.lang.String)[pri:0, instance:def.eBOM.TestEBOM@b97c004]" name="testEBOMPost" duration-ms="281" started-at="2019-03-20T08:54:18Z" data-provider="getEBOM" finished-at="2019-03-20T08:54:18Z">
+        <test-method status="PASS" signature="testEBOMPost(java.lang.String, java.lang.String, int, int, java.lang.String, java.util.ArrayList, int, java.lang.String)[pri:0, instance:def.eBOM.TestEBOM@7c0e2abd]" name="testEBOMPost" duration-ms="269" started-at="2019-04-02T07:52:59Z" data-provider="getEBOM" finished-at="2019-04-02T07:53:00Z">
           <params>
             <param index="0">
               <value>
@@ -1163,7 +1481,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEBOMPost -->
-        <test-method status="PASS" signature="testEBOMPost(java.lang.String, java.lang.String, int, int, java.lang.String, java.util.ArrayList, int, java.lang.String)[pri:0, instance:def.eBOM.TestEBOM@b97c004]" name="testEBOMPost" duration-ms="428" started-at="2019-03-20T08:54:18Z" data-provider="getEBOM" finished-at="2019-03-20T08:54:19Z">
+        <test-method status="PASS" signature="testEBOMPost(java.lang.String, java.lang.String, int, int, java.lang.String, java.util.ArrayList, int, java.lang.String)[pri:0, instance:def.eBOM.TestEBOM@7c0e2abd]" name="testEBOMPost" duration-ms="410" started-at="2019-04-02T07:53:00Z" data-provider="getEBOM" finished-at="2019-04-02T07:53:00Z">
           <params>
             <param index="0">
               <value>
@@ -1187,7 +1505,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
             </param>
             <param index="4">
               <value>
-                <![CDATA[41122]]>
+                <![CDATA[84462]]>
               </value>
             </param>
             <param index="5">
@@ -1209,7 +1527,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEBOMPost -->
-        <test-method status="PASS" signature="testEBOMPost(java.lang.String, java.lang.String, int, int, java.lang.String, java.util.ArrayList, int, java.lang.String)[pri:0, instance:def.eBOM.TestEBOM@b97c004]" name="testEBOMPost" duration-ms="341" started-at="2019-03-20T08:54:19Z" data-provider="getEBOM" finished-at="2019-03-20T08:54:19Z">
+        <test-method status="PASS" signature="testEBOMPost(java.lang.String, java.lang.String, int, int, java.lang.String, java.util.ArrayList, int, java.lang.String)[pri:0, instance:def.eBOM.TestEBOM@7c0e2abd]" name="testEBOMPost" duration-ms="269" started-at="2019-04-02T07:53:00Z" data-provider="getEBOM" finished-at="2019-04-02T07:53:00Z">
           <params>
             <param index="0">
               <value>
@@ -1233,7 +1551,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
             </param>
             <param index="4">
               <value>
-                <![CDATA[41122]]>
+                <![CDATA[84462]]>
               </value>
             </param>
             <param index="5">
@@ -1255,7 +1573,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEBOMPost -->
-        <test-method status="FAIL" signature="testEBOMPost1(java.lang.String, java.lang.String, int, int, java.lang.String, java.util.ArrayList, int, java.lang.String)[pri:0, instance:def.eBOM.TestEBOM@b97c004]" name="testEBOMPost1" duration-ms="295" started-at="2019-03-20T08:54:19Z" data-provider="getEBOM1" finished-at="2019-03-20T08:54:19Z">
+        <test-method status="PASS" signature="testEBOMPost1(java.lang.String, java.lang.String, int, int, java.lang.String, java.util.ArrayList, int, java.lang.String)[pri:0, instance:def.eBOM.TestEBOM@7c0e2abd]" name="testEBOMPost1" duration-ms="361" started-at="2019-04-02T07:53:00Z" data-provider="getEBOM1" finished-at="2019-04-02T07:53:01Z">
           <params>
             <param index="0">
               <value>
@@ -1279,7 +1597,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
             </param>
             <param index="4">
               <value>
-                <![CDATA[1001]]>
+                <![CDATA[62863]]>
               </value>
             </param>
             <param index="5">
@@ -1298,15 +1616,109 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEBOMPost1 -->
+        <test-method status="PASS" signature="testEBOMPost1(java.lang.String, java.lang.String, int, int, java.lang.String, java.util.ArrayList, int, java.lang.String)[pri:0, instance:def.eBOM.TestEBOM@7c0e2abd]" name="testEBOMPost1" duration-ms="254" started-at="2019-04-02T07:53:01Z" data-provider="getEBOM1" finished-at="2019-04-02T07:53:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000003]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[62864]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[[RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='null', regulatoryControl=true}, RawMaterial{amount='', lossRate='',currentUnitId;', materialCode='', regulatoryControl=true}]]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[创建值为空的物料列表]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEBOMPost1 -->
+      </class> <!-- def.eBOM.TestEBOM -->
+      <class name="materialLot.admit.TestPurchaseAdmit">
+        <test-method status="FAIL" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@5f375618]" name="testAdmitPost" duration-ms="446" started-at="2019-04-02T07:53:11Z" data-provider="getPurchaseAdmit" finished-at="2019-04-02T07:53:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[180]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[388]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[CodeAndAmount{amount='0.0',code='885702',unit;拖'}]]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1000003]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1319]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[创建没有入厂二维码的数据]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
-Expected status code <200> but was <400>.
+Expected status code <400> but was <500>.
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <400>.
+Expected status code <400> but was <500>.
 
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1315,14 +1727,11 @@ at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
 at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
@@ -1332,8 +1741,8 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
-at request.RequestObject.getStatus(RequestObject.java:64)
-at def.eBOM.TestEBOM.testEBOMPost1(TestEBOM.java:28)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestPurchaseAdmit.testAdmitPost(TestPurchaseAdmit.java:22)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1374,102 +1783,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEBOMPost1 -->
-        <test-method status="PASS" signature="testEBOMPost1(java.lang.String, java.lang.String, int, int, java.lang.String, java.util.ArrayList, int, java.lang.String)[pri:0, instance:def.eBOM.TestEBOM@b97c004]" name="testEBOMPost1" duration-ms="284" started-at="2019-03-20T08:54:19Z" data-provider="getEBOM1" finished-at="2019-03-20T08:54:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1000003]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1000003]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1002]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[[RawMaterial{amount='1', lossRate='1',currentUnitId;1', materialCode='null', regulatoryControl=true}, RawMaterial{amount='', lossRate='',currentUnitId;', materialCode='', regulatoryControl=true}]]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[400]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[创建值为空的物料列表]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEBOMPost1 -->
-      </class> <!-- def.eBOM.TestEBOM -->
-      <class name="materialLot.admit.TestPurchaseAdmit">
-        <test-method status="PASS" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@6a024a67]" name="testAdmitPost" duration-ms="242" started-at="2019-03-20T08:54:37Z" data-provider="getPurchaseAdmit" finished-at="2019-03-20T08:54:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[180]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[388]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[[CodesAndAmounts{amount='0',code='7462',unit;拖'}]]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1000003]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[1319]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[400]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[创建没有入厂二维码的数据]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@6a024a67]" name="testAdmitPost" duration-ms="284" started-at="2019-03-20T08:54:37Z" data-provider="getPurchaseAdmit" finished-at="2019-03-20T08:54:38Z">
+        <test-method status="PASS" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@5f375618]" name="testAdmitPost" duration-ms="311" started-at="2019-04-02T07:53:12Z" data-provider="getPurchaseAdmit" finished-at="2019-04-02T07:53:12Z">
           <params>
             <param index="0">
               <value>
@@ -1483,7 +1798,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="2">
               <value>
-                <![CDATA[[CodesAndAmounts{amount='100',code='746',unit;拖'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='88570',unit;拖'}]]]>
               </value>
             </param>
             <param index="3">
@@ -1513,7 +1828,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@6a024a67]" name="testAdmitPost" duration-ms="931" started-at="2019-03-20T08:54:38Z" data-provider="getPurchaseAdmit" finished-at="2019-03-20T08:54:39Z">
+        <test-method status="FAIL" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@5f375618]" name="testAdmitPost" duration-ms="435" started-at="2019-04-02T07:53:12Z" data-provider="getPurchaseAdmit" finished-at="2019-04-02T07:53:13Z">
           <params>
             <param index="0">
               <value>
@@ -1527,7 +1842,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="2">
               <value>
-                <![CDATA[[CodesAndAmounts{amount='100',code='746',unit;拖'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='88570',unit;拖'}]]]>
               </value>
             </param>
             <param index="3">
@@ -1556,10 +1871,81 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestPurchaseAdmit.testAdmitPost(TestPurchaseAdmit.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@6a024a67]" name="testAdmitPost" duration-ms="819" started-at="2019-03-20T08:54:39Z" data-provider="getPurchaseAdmit" finished-at="2019-03-20T08:54:39Z">
+        <test-method status="FAIL" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@5f375618]" name="testAdmitPost" duration-ms="435" started-at="2019-04-02T07:53:13Z" data-provider="getPurchaseAdmit" finished-at="2019-04-02T07:53:13Z">
           <params>
             <param index="0">
               <value>
@@ -1573,7 +1959,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="2">
               <value>
-                <![CDATA[[CodesAndAmounts{amount='100',code='7463',unit;瓶'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='885703',unit;瓶'}]]]>
               </value>
             </param>
             <param index="3">
@@ -1602,10 +1988,81 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestPurchaseAdmit.testAdmitPost(TestPurchaseAdmit.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@6a024a67]" name="testAdmitPost" duration-ms="403" started-at="2019-03-20T08:54:39Z" data-provider="getPurchaseAdmit" finished-at="2019-03-20T08:54:40Z">
+        <test-method status="FAIL" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@5f375618]" name="testAdmitPost" duration-ms="418" started-at="2019-04-02T07:53:13Z" data-provider="getPurchaseAdmit" finished-at="2019-04-02T07:53:14Z">
           <params>
             <param index="0">
               <value>
@@ -1619,7 +2076,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="2">
               <value>
-                <![CDATA[[CodesAndAmounts{amount='100',code='746',unit;拖'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='88570',unit;拖'}]]]>
               </value>
             </param>
             <param index="3">
@@ -1648,10 +2105,81 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestPurchaseAdmit.testAdmitPost(TestPurchaseAdmit.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@6a024a67]" name="testAdmitPost" duration-ms="724" started-at="2019-03-20T08:54:40Z" data-provider="getPurchaseAdmit" finished-at="2019-03-20T08:54:41Z">
+        <test-method status="FAIL" signature="testAdmitPost(int, int, java.util.ArrayList, java.lang.String, java.lang.String, java.lang.Object, int, java.lang.String)[pri:0, instance:materialLot.admit.TestPurchaseAdmit@5f375618]" name="testAdmitPost" duration-ms="421" started-at="2019-04-02T07:53:14Z" data-provider="getPurchaseAdmit" finished-at="2019-04-02T07:53:14Z">
           <params>
             <param index="0">
               <value>
@@ -1665,7 +2193,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="2">
               <value>
-                <![CDATA[[CodesAndAmounts{amount='100',code='7461-0',unit;拖'}, CodesAndAmounts{amount='100',code='7461-1',unit;拖'}, CodesAndAmounts{amount='100',code='7461-2',unit;拖'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='885701-0',unit;拖'}, CodeAndAmount{amount='100.0',code='885701-1',unit;拖'}, CodeAndAmount{amount='100.0',code='885701-2',unit;拖'}]]]>
               </value>
             </param>
             <param index="3">
@@ -1694,12 +2222,83 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestPurchaseAdmit.testAdmitPost(TestPurchaseAdmit.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
       </class> <!-- materialLot.admit.TestPurchaseAdmit -->
       <class name="materialLot.admit.TestAdmit">
-        <test-method status="PASS" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@6ea12c19]" name="testAdmitPost" duration-ms="287" started-at="2019-03-20T08:54:34Z" data-provider="getAdmit" finished-at="2019-03-20T08:54:34Z">
+        <test-method status="PASS" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@50c87b21]" name="testAdmitPost" duration-ms="308" started-at="2019-04-02T07:53:03Z" data-provider="getAdmit" finished-at="2019-04-02T07:53:03Z">
           <params>
             <param index="0">
               <value>
@@ -1708,7 +2307,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="1">
               <value>
-                <![CDATA[[CodeAndAmount{amount='100.0',code='42464',unit;拖'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='28660',unit;拖'}]]]>
               </value>
             </param>
             <param index="2">
@@ -1723,7 +2322,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="4">
               <value>
-                <![CDATA[Wed Mar 20 16:54:34 CST 2019]]>
+                <![CDATA[Tue Apr 02 15:53:03 CST 2019]]>
               </value>
             </param>
             <param index="5">
@@ -1755,7 +2354,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@6ea12c19]" name="testAdmitPost" duration-ms="646" started-at="2019-03-20T08:54:34Z" data-provider="getAdmit" finished-at="2019-03-20T08:54:35Z">
+        <test-method status="FAIL" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@50c87b21]" name="testAdmitPost" duration-ms="442" started-at="2019-04-02T07:53:03Z" data-provider="getAdmit" finished-at="2019-04-02T07:53:04Z">
           <params>
             <param index="0">
               <value>
@@ -1764,7 +2363,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="1">
               <value>
-                <![CDATA[[CodeAndAmount{amount='100.0',code='42464',unit;拖'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='28660',unit;拖'}]]]>
               </value>
             </param>
             <param index="2">
@@ -1779,7 +2378,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="4">
               <value>
-                <![CDATA[Wed Mar 20 16:54:34 CST 2019]]>
+                <![CDATA[Tue Apr 02 15:53:03 CST 2019]]>
               </value>
             </param>
             <param index="5">
@@ -1808,10 +2407,84 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestAdmit.testAdmitPost(TestAdmit.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@6ea12c19]" name="testAdmitPost" duration-ms="372" started-at="2019-03-20T08:54:35Z" data-provider="getAdmit" finished-at="2019-03-20T08:54:35Z">
+        <test-method status="FAIL" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@50c87b21]" name="testAdmitPost" duration-ms="448" started-at="2019-04-02T07:53:04Z" data-provider="getAdmit" finished-at="2019-04-02T07:53:04Z">
           <params>
             <param index="0">
               <value>
@@ -1820,7 +2493,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="1">
               <value>
-                <![CDATA[[CodeAndAmount{amount='100.0',code='42464',unit;拖'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='28660',unit;拖'}]]]>
               </value>
             </param>
             <param index="2">
@@ -1835,7 +2508,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="4">
               <value>
-                <![CDATA[Wed Mar 20 16:54:34 CST 2019]]>
+                <![CDATA[Tue Apr 02 15:53:03 CST 2019]]>
               </value>
             </param>
             <param index="5">
@@ -1864,10 +2537,82 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestAdmit.testAdmitPost(TestAdmit.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@6ea12c19]" name="testAdmitPost" duration-ms="652" started-at="2019-03-20T08:54:35Z" data-provider="getAdmit" finished-at="2019-03-20T08:54:36Z">
+        <test-method status="FAIL" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@50c87b21]" name="testAdmitPost" duration-ms="385" started-at="2019-04-02T07:53:04Z" data-provider="getAdmit" finished-at="2019-04-02T07:53:05Z">
           <params>
             <param index="0">
               <value>
@@ -1876,7 +2621,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="1">
               <value>
-                <![CDATA[[CodeAndAmount{amount='100.0',code='424641-0',unit;拖'}, CodeAndAmount{amount='100.0',code='424641-1',unit;拖'}, CodeAndAmount{amount='100.0',code='424641-2',unit;拖'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='286601-0',unit;拖'}, CodeAndAmount{amount='100.0',code='286601-1',unit;拖'}, CodeAndAmount{amount='100.0',code='286601-2',unit;拖'}]]]>
               </value>
             </param>
             <param index="2">
@@ -1891,7 +2636,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="4">
               <value>
-                <![CDATA[Wed Mar 20 16:54:34 CST 2019]]>
+                <![CDATA[Tue Apr 02 15:53:03 CST 2019]]>
               </value>
             </param>
             <param index="5">
@@ -1920,10 +2665,82 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestAdmit.testAdmitPost(TestAdmit.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@6ea12c19]" name="testAdmitPost" duration-ms="613" started-at="2019-03-20T08:54:36Z" data-provider="getAdmit" finished-at="2019-03-20T08:54:36Z">
+        <test-method status="FAIL" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@50c87b21]" name="testAdmitPost" duration-ms="364" started-at="2019-04-02T07:53:05Z" data-provider="getAdmit" finished-at="2019-04-02T07:53:05Z">
           <params>
             <param index="0">
               <value>
@@ -1932,7 +2749,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="1">
               <value>
-                <![CDATA[[CodeAndAmount{amount='100.0',code='424643',unit;瓶'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='286603',unit;瓶'}]]]>
               </value>
             </param>
             <param index="2">
@@ -1947,7 +2764,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="4">
               <value>
-                <![CDATA[Wed Mar 20 16:54:34 CST 2019]]>
+                <![CDATA[Tue Apr 02 15:53:03 CST 2019]]>
               </value>
             </param>
             <param index="5">
@@ -1976,10 +2793,82 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestAdmit.testAdmitPost(TestAdmit.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@6ea12c19]" name="testAdmitPost" duration-ms="286" started-at="2019-03-20T08:54:36Z" data-provider="getAdmit" finished-at="2019-03-20T08:54:36Z">
+        <test-method status="FAIL" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@50c87b21]" name="testAdmitPost" duration-ms="358" started-at="2019-04-02T07:53:05Z" data-provider="getAdmit" finished-at="2019-04-02T07:53:05Z">
           <params>
             <param index="0">
               <value>
@@ -1988,7 +2877,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="1">
               <value>
-                <![CDATA[[CodeAndAmount{amount='0.0',code='424642',unit;拖'}]]]>
+                <![CDATA[[CodeAndAmount{amount='0.0',code='286602',unit;拖'}]]]>
               </value>
             </param>
             <param index="2">
@@ -2003,7 +2892,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="4">
               <value>
-                <![CDATA[Wed Mar 20 16:54:34 CST 2019]]>
+                <![CDATA[Tue Apr 02 15:53:03 CST 2019]]>
               </value>
             </param>
             <param index="5">
@@ -2032,10 +2921,82 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestAdmit.testAdmitPost(TestAdmit.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@6ea12c19]" name="testAdmitPost" duration-ms="283" started-at="2019-03-20T08:54:37Z" data-provider="getAdmit" finished-at="2019-03-20T08:54:37Z">
+        <test-method status="FAIL" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@50c87b21]" name="testAdmitPost" duration-ms="365" started-at="2019-04-02T07:53:05Z" data-provider="getAdmit" finished-at="2019-04-02T07:53:06Z">
           <params>
             <param index="0">
               <value>
@@ -2059,7 +3020,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="4">
               <value>
-                <![CDATA[Wed Mar 20 16:54:34 CST 2019]]>
+                <![CDATA[Tue Apr 02 15:53:03 CST 2019]]>
               </value>
             </param>
             <param index="5">
@@ -2088,10 +3049,81 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+at utils.common.RequestObject.getStatus(RequestObject.java:68)
+at materialLot.admit.TestAdmit.testAdmitPost(TestAdmit.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdmitPost -->
-        <test-method status="PASS" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@6ea12c19]" name="testAdmitPost" duration-ms="325" started-at="2019-03-20T08:54:37Z" data-provider="getAdmit" finished-at="2019-03-20T08:54:37Z">
+        <test-method status="PASS" signature="testAdmitPost(java.lang.String, java.util.ArrayList, java.util.ArrayList, java.lang.Object, java.util.Date, java.lang.String, object.materialLot.OriginPlace, java.lang.String, int, java.lang.String)[pri:0, instance:materialLot.admit.TestAdmit@50c87b21]" name="testAdmitPost" duration-ms="263" started-at="2019-04-02T07:53:06Z" data-provider="getAdmit" finished-at="2019-04-02T07:53:06Z">
           <params>
             <param index="0">
               <value>
@@ -2100,7 +3132,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="1">
               <value>
-                <![CDATA[[CodeAndAmount{amount='100.0',code='42464',unit;拖'}]]]>
+                <![CDATA[[CodeAndAmount{amount='100.0',code='28660',unit;拖'}]]]>
               </value>
             </param>
             <param index="2">
@@ -2113,7 +3145,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
             </param>
             <param index="4">
               <value>
-                <![CDATA[Wed Mar 20 16:54:34 CST 2019]]>
+                <![CDATA[Tue Apr 02 15:53:03 CST 2019]]>
               </value>
             </param>
             <param index="5">

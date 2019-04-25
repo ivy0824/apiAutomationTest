@@ -1,7 +1,7 @@
 package utils.def;
 
 import config.Environment;
-import request.RequestObject;
+import utils.common.RequestObject;
 
 import java.util.HashMap;
 

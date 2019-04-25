@@ -3,7 +3,7 @@ package materialLot.adjust;
 import Params.materialLot.AdjustParams;
 import config.Environment;
 import org.testng.annotations.Test;
-import request.RequestObject;
+import utils.common.RequestObject;
 import java.util.HashMap;
 
 public class TestAdjust {
@@ -20,6 +20,7 @@ public class TestAdjust {
         body.toString();
         HashMap<String,Object> params=new HashMap<String, Object>();
         RequestObject.getResponseMessage(RequestObject.testPost(Environment.server_manufacture,"/v1/materialLot/_adjust",body,params),"message",message);
+
 
     }
 

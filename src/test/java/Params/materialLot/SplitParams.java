@@ -1,8 +1,7 @@
 package Params.materialLot;
 
 import config.Environment;
-import object.materialLot.CodesAndAmounts;
-import object.materialLot.MfgBatches;
+import object.materialLot.CodeAndAmount;
 import object.materialLot.Targets;
 import org.testng.annotations.DataProvider;
 import utils.materialLot.AdmitMethod;
@@ -28,15 +27,15 @@ public class SplitParams {
 
 
         //创建入厂二维码数据
-        ArrayList<CodesAndAmounts> codesAndAmounts = new ArrayList<CodesAndAmounts>();
-        CodesAndAmounts codesAndAmounts1 = new CodesAndAmounts("100",qcCode+"1","拖");
-        CodesAndAmounts codesAndAmounts2 = new CodesAndAmounts("100",qcCode+"2","拖");
+        ArrayList<CodeAndAmount> codeAndAmount = new ArrayList<CodeAndAmount>();
+        CodeAndAmount codeAndAmount1 = new CodeAndAmount(100.0,qcCode+"1","拖");
+        CodeAndAmount codeAndAmount2 = new CodeAndAmount(100.0,qcCode+"2","拖");
 
-        codesAndAmounts.add(codesAndAmounts1);
-        codesAndAmounts.add(codesAndAmounts2);
+        codeAndAmount.add(codeAndAmount1);
+        codeAndAmount.add(codeAndAmount2);
 
         //创建入厂物料并获取返回的物料单元值
-        HashMap<String,Integer> materialLotId = AdmitMethod.admit("1000002",codesAndAmounts, Environment.storageId);
+        HashMap<String,Integer> materialLotId = AdmitMethod.admit("1000002",codeAndAmount, Environment.storageId);
         int sourceMaterialLotId1 = materialLotId.get(qcCode+"1");
         int sourceMaterialLotId2 = materialLotId.get(qcCode+"2");
 

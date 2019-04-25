@@ -3,7 +3,7 @@ package produce_task;
 import Params.product_task.Create_ClaimParams;
 import config.Environment;
 import org.testng.annotations.Test;
-import request.RequestObject;
+import utils.common.RequestObject;
 
 import java.util.HashMap;
 

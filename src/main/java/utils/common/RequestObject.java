@@ -1,13 +1,15 @@
-package rest_assured;
+package utils.common;
 
+import blacklake.lakers.Org;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import config.Environment;
 import io.restassured.response.ValidatableResponse;
+import org.springframework.context.annotation.Bean;
 import java.util.HashMap;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasItem;
 
 public class RequestObject{
 
@@ -16,6 +18,45 @@ public class RequestObject{
     public static final String orgId = Environment.orgId;
     public static final String userId = Environment.userId;
     public static final String userName = Environment.userName;
+
+    public static final String orgId1 = "138";
+    public static final String userId1 = "11908";
+    public static final String userName1 = "admin";
+
+    /**
+     * post请求方法,创建工厂专用的请求
+     * @param path
+     * @param body
+     */
+    public static ValidatableResponse post(String server, String path, Object body){
+
+        return given()
+                .contentType("application/json")
+                .body(body)
+                .log().all()
+                .when().post("http://"+server+url + path)
+                .then()
+                .log().all();
+    }
+
+    /**
+     * post请求方法
+     * @param path
+     * @param body
+     */
+    public static ValidatableResponse postRequest(String server, String path, Object body){
+
+        return given()
+                .contentType("application/json")
+                .header("X-Org-Id", orgId1)
+                .header("X-User-Id",userId1)
+                .header("X-User-Name",userName1)
+                .body(body)
+                .log().all()
+                .when().post("http://"+server+url + path)
+                .then()
+                .log().all();
+    }
 
 
 
@@ -29,7 +70,6 @@ public class RequestObject{
                 .params(params)
                 .when().get("http://"+server+url + path)
                 .then()
-                .log().body()
                 .log().all();
     }
 
@@ -49,10 +89,13 @@ public class RequestObject{
                 .header("X-User-Name",userName)
                 .body(body)
                 .params(params)
+                .log().all()
                 .when().post("http://"+server+url + path)
                 .then()
                 .log().all();
     }
+
+
 
 
     /**
@@ -94,5 +137,10 @@ public class RequestObject{
      */
     public static void getContainsString(ValidatableResponse response, String jsonPath, String responseMessage){
         response.body(jsonPath, containsString(responseMessage));
+    }
+
+    @Bean
+    public ObjectMapper objectMapper() {
+        return new ObjectMapper().disable(SerializationFeature.FAIL_ON_EMPTY_BEANS);
     }
 }

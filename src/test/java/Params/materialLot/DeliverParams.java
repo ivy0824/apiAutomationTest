@@ -1,16 +1,12 @@
 package Params.materialLot;
 
 import config.Environment;
-import object.materialLot.CodesAndAmounts;
+import object.materialLot.CodeAndAmount;
 import object.materialLot.MfgBatches;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 import utils.materialLot.AdmitMethod;
-
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import static java.lang.Integer.parseInt;
 
 public class DeliverParams {
 
@@ -23,12 +19,12 @@ public class DeliverParams {
 //           System.out.println(a);
 //       }
 //        //创建入厂的：数量，二维码，单位 数据
-//        ArrayList<CodesAndAmounts> codesAndAmounts = new ArrayList<CodesAndAmounts>();
-//        CodesAndAmounts codesAndAmounts01 = new CodesAndAmounts("100",qcCode,"瓶");
-//        CodesAndAmounts codesAndAmountsO2 = new CodesAndAmounts("100",qcCode+"1","瓶");
+//        ArrayList<codeAndAmount> codeAndAmount = new ArrayList<codeAndAmount>();
+//        codeAndAmount codeAndAmount01 = new codeAndAmount("100",qcCode,"瓶");
+//        codeAndAmount codeAndAmountO2 = new codeAndAmount("100",qcCode+"1","瓶");
 //
-//        codesAndAmounts.add(codesAndAmounts01);
-//        codesAndAmounts.add(codesAndAmountsO2);
+//        codeAndAmount.add(codeAndAmount01);
+//        codeAndAmount.add(codeAndAmountO2);
 //
 //        //创建供应商数据
 //        ArrayList<MfgBatches> mfgBatches = new ArrayList<MfgBatches>();
@@ -37,7 +33,7 @@ public class DeliverParams {
 //        mfgBatches.add(mfgBatches1);
 //        mfgBatches.add(mfgBatches2);
 //
-//        AdmitMethod.admit("1000001",codesAndAmounts,mfgBatches,1319);
+//        AdmitMethod.admit("1000001",codeAndAmount,mfgBatches,1319);
 //
 //    }
 
@@ -55,16 +51,16 @@ public class DeliverParams {
         String qcCode =  (Math.random() * 100000) + "";
 
         //创建入厂的：数量，二维码，单位 数据
-        ArrayList<CodesAndAmounts> codesAndAmounts = new ArrayList<CodesAndAmounts>();
-        CodesAndAmounts codesAndAmounts01 = new CodesAndAmounts("100",qcCode,"瓶");
-        codesAndAmounts.add(codesAndAmounts01);
+        ArrayList<CodeAndAmount> codeAndAmount = new ArrayList<CodeAndAmount>();
+        CodeAndAmount codeAndAmount01 = new CodeAndAmount(100.0,qcCode,"瓶");
+        codeAndAmount.add(codeAndAmount01);
 
         //创建入厂的：数量，二维码，单位 数据
-        ArrayList<CodesAndAmounts> codesAndAmounts1 = new ArrayList<CodesAndAmounts>();
-        CodesAndAmounts codesAndAmountsO1 = new CodesAndAmounts("100",qcCode+"0","瓶");
-        CodesAndAmounts codesAndAmountsO2 = new CodesAndAmounts("100",qcCode+"1","瓶");
-        codesAndAmounts1.add(codesAndAmountsO1);
-        codesAndAmounts1.add(codesAndAmountsO2);
+        ArrayList<CodeAndAmount> codeAndAmount1 = new ArrayList<CodeAndAmount>();
+        CodeAndAmount codeAndAmountO1 = new CodeAndAmount(100.0,qcCode+"0","瓶");
+        CodeAndAmount codeAndAmountO2 = new CodeAndAmount(100.0,qcCode+"1","瓶");
+        codeAndAmount1.add(codeAndAmountO1);
+        codeAndAmount1.add(codeAndAmountO2);
 
         //创建供应商数据
         ArrayList<MfgBatches> mfgBatches = new ArrayList<MfgBatches>();
@@ -75,9 +71,9 @@ public class DeliverParams {
 
         //创建入厂物料并获取返回的物料单元值
         //入厂单个二维码
-        int materialLotId1 = AdmitMethod.admit("1000001",codesAndAmounts, Environment.storageId).get(qcCode) ;
+        int materialLotId1 = AdmitMethod.admit("1000001",codeAndAmount, Environment.storageId).get(qcCode) ;
         //入厂多个二维码
-        HashMap<String,Integer> materialLotId = AdmitMethod.admit("1000002",codesAndAmounts1,Environment.storageId);
+        HashMap<String,Integer> materialLotId = AdmitMethod.admit("1000002",codeAndAmount1,Environment.storageId);
         int materialLotId2 = materialLotId.get(qcCode+"0");
         int materialLotId3 = materialLotId.get(qcCode+"1");
 

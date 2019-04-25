@@ -15,33 +15,12 @@ import java.util.List;
 
 public class ExcelReader {
 
-    public static void main(String args[]) {
-        List<List<String>> lists = readExcel("/Users/ivy/IdeaProjects/mavenDemo1/dataXlsx/test1.xlsx");
-//        for (int i = 1; i < lists.size(); i++) {
-//            System.out.println(lists.get(i));
-//        }
-        Object[][] results = new Object[lists.size()][];
-        for (int i = 0; i < lists.size(); i++) {
-            results[i] = lists.get(i).toArray();
-        }
-
-        for (int i = 1; i < results.length; i++) {
-            for (int j = 0; j < results[i].length; j++) {
-                System.out.print(results[i][j] + " | ");
-                }
-                System.out.println();
-                }
-    }
-
-
         /**
          * 读取excel文件并返回除去第一行的数据
-         *
-         * @param path
          * @param path
          * @throws IOException
          */
-    public static List<List<String>> readExcel(String path) {
+    public static Object[][] readExcel(String path) {
         String fileType = path.substring(path.lastIndexOf(".") + 1);
         // return a list contains many list
         List<List<String>> lists = new ArrayList<List<String>>();
@@ -86,7 +65,14 @@ public class ExcelReader {
         for(int i=1;i<lists.size();i++){
             lists1.add(lists.get(i));
         }
-        return lists1;
+        Object[][] results = new Object[lists1.size()][];
+
+        for (int i = 0; i < lists1.size(); i++) {
+            results[i] = lists1.get(i).toArray();
+        }
+        Object[][] sheetData1 = results;
+
+        return sheetData1;
     }
 }
 

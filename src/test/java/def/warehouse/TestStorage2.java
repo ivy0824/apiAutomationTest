@@ -2,7 +2,7 @@ package def.warehouse;
 
 import Params.def.StorageParams;
 import config.Environment;
-import request.RequestObject;
+import utils.common.RequestObject;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;

@@ -1,7 +1,10 @@
 package utils.def;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import config.Environment;
-import request.RequestObject;
+import org.springframework.context.annotation.Bean;
+import utils.common.RequestObject;
 
 import java.util.HashMap;
 
@@ -66,6 +69,11 @@ public class MaterialMethod {
         body.put("fifo","false");
         HashMap<String, String> params = new HashMap<String, String>();
         RequestObject.testPost(Environment.server_def,"material", body, params);
+    }
+
+    @Bean
+    public ObjectMapper objectMapper() {
+        return new ObjectMapper().disable(SerializationFeature.FAIL_ON_EMPTY_BEANS);
     }
 
 }

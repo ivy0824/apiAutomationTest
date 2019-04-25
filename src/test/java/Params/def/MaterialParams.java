@@ -1,9 +1,9 @@
 package Params.def;
 
 import org.testng.annotations.DataProvider;
+import utils.common.CSVReader;
 import utils.common.ExcelReader;
-
-import java.util.List;
+import utils.common.JsonReader;
 
 public class MaterialParams {
 
@@ -29,17 +29,17 @@ public class MaterialParams {
     }
 
     @DataProvider
-    public Object[][]getMaterial1(){
-        List<List<String>> lists = ExcelReader.readExcel("/Users/ivy/IdeaProjects/mavenDemo1/dataXlsx/material.xlsx");
-        Object[][] results = new Object[lists.size()][];
-
-        for (int i = 0; i < lists.size(); i++) {
-            results[i] = lists.get(i).toArray();
-        }
-        Object[][] sheetData1 = results;
-
-        return sheetData1;
+    public Object[][]getMaterialWithExcel(){
+        return ExcelReader.readExcel("./dataXlsx/material.xlsv");
     }
+
+
+    @DataProvider
+    public Object[][]getMaterialWithCSV() throws Exception {
+        return CSVReader.getData("./dataXlsx/material.csv");
+    }
+
+
 
     /**
      * 创建不同状态物料的测试数据

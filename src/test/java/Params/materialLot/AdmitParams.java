@@ -2,26 +2,23 @@ package Params.materialLot;
 
 import config.Environment;
 import object.materialLot.CodeAndAmount;
-import object.materialLot.CodesAndAmounts;
 import object.materialLot.MfgBatches;
 import object.materialLot.OriginPlace;
 import org.testng.annotations.DataProvider;
-
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 
 public class AdmitParams {
 
     /**
      * 创建入厂的测试数据
      * materialCode
-     * codesAndAmounts
+     * codeAndAmount
      * MfgBatches
      * storageId
      * validityPeriod
-     * supplierCode：	00000001
-     * originPlace
+     * supplierCode：	00000001originPlace
+     *
      * remark
      * statusCode
      * 测试用例描述
@@ -33,38 +30,38 @@ public class AdmitParams {
         String qcCode = (int) (Math.random() * 100000) + "";
 
         //创建入厂的：数量，二维码，单位 数据
-        ArrayList<CodeAndAmount> codesAndAmounts = new ArrayList<CodeAndAmount>();
-        CodeAndAmount codeAndAmount = new CodeAndAmount(100.0,qcCode,"拖");
-        codesAndAmounts.add(codeAndAmount);
+        ArrayList<CodeAndAmount> codeAndAmount = new ArrayList<CodeAndAmount>();
+        CodeAndAmount codeAndAmount1 = new CodeAndAmount(100.0,qcCode,"拖");
+        codeAndAmount.add(codeAndAmount1);
 
         //创建入厂的：数量，二维码，单位 数据
-        ArrayList<CodeAndAmount> codesAndAmountsO = new ArrayList<CodeAndAmount>();
-        CodeAndAmount codesAndAmountsO1 = new CodeAndAmount(100.0,qcCode+"0","拖");
-        codesAndAmountsO.add(codesAndAmountsO1);
+        ArrayList<CodeAndAmount> codeAndAmountO = new ArrayList<CodeAndAmount>();
+        CodeAndAmount codeAndAmountO1 = new CodeAndAmount(100.0,qcCode+"0","拖");
+        codeAndAmountO.add(codeAndAmountO1);
 
         //创建入厂多个二维码数据
-        ArrayList<CodeAndAmount> codesAndAmountsM = new ArrayList<CodeAndAmount>();
-        CodeAndAmount codesAndAmountsM1 = new CodeAndAmount(100.0,qcCode+"1-0","拖");
-        CodeAndAmount codesAndAmountsM2 = new CodeAndAmount(100.0,qcCode+"1-1","拖");
-        CodeAndAmount codesAndAmountsM3 = new CodeAndAmount(100.0,qcCode+"1-2","拖");
-        codesAndAmountsM.add(codesAndAmountsM1);
-        codesAndAmountsM.add(codesAndAmountsM2);
-        codesAndAmountsM.add(codesAndAmountsM3);
+        ArrayList<CodeAndAmount> codeAndAmountM = new ArrayList<CodeAndAmount>();
+        CodeAndAmount codeAndAmountM1 = new CodeAndAmount(100.0,qcCode+"1-0","拖");
+        CodeAndAmount codeAndAmountM2 = new CodeAndAmount(100.0,qcCode+"1-1","拖");
+        CodeAndAmount codeAndAmountM3 = new CodeAndAmount(100.0,qcCode+"1-2","拖");
+        codeAndAmountM.add(codeAndAmountM1);
+        codeAndAmountM.add(codeAndAmountM2);
+        codeAndAmountM.add(codeAndAmountM3);
 
         //创建数量为0的二维码数据
-        ArrayList<CodeAndAmount> codesAndAmountsZ = new ArrayList<CodeAndAmount>();
-        CodeAndAmount codesAndAmountsZ1 = new CodeAndAmount(0.0,qcCode+"2","拖");
-        codesAndAmountsZ.add(codesAndAmountsZ1);
+        ArrayList<CodeAndAmount> codeAndAmountZ = new ArrayList<CodeAndAmount>();
+        CodeAndAmount codeAndAmountZ1 = new CodeAndAmount(0.0,qcCode+"2","拖");
+        codeAndAmountZ.add(codeAndAmountZ1);
 
         //创建使用转换单位的二维码数据
-        ArrayList<CodeAndAmount> codesAndAmountsT = new ArrayList<CodeAndAmount>();
-        CodeAndAmount codesAndAmountsT1 = new CodeAndAmount(100.0,qcCode+"3","瓶");
-        codesAndAmountsT.add(codesAndAmountsT1);
+        ArrayList<CodeAndAmount> codeAndAmountT = new ArrayList<CodeAndAmount>();
+        CodeAndAmount codeAndAmountT1 = new CodeAndAmount(100.0,qcCode+"3","瓶");
+        codeAndAmountT.add(codeAndAmountT1);
 
         //创建没有入厂二维码的数据
-        ArrayList<CodeAndAmount> codesAndAmountsN = new ArrayList<CodeAndAmount>();
-        CodeAndAmount codesAndAmountsN1 = new CodeAndAmount(0.0,"","");
-        codesAndAmountsN.add(codesAndAmountsN1);
+        ArrayList<CodeAndAmount> codeAndAmountN = new ArrayList<CodeAndAmount>();
+        CodeAndAmount codeAndAmountN1 = new CodeAndAmount(0.0,"","");
+        codeAndAmountN.add(codeAndAmountN1);
 
 
         //创建供应商数据
@@ -87,18 +84,18 @@ public class AdmitParams {
 
 
         return new Object[][]{
-                {"",codesAndAmounts,mfgBatches, Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",400,"创建没有入厂物料的数据"},
-                {"1000002",codesAndAmounts,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",200,"创建入厂数据"},
-                {"1000002",codesAndAmounts,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",400,"创建入厂二维码相同的数据"},
+                {"",codeAndAmount,mfgBatches, Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",400,"创建没有入厂物料的数据"},
+                {"1000002",codeAndAmount,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",200,"创建入厂数据"},
+                {"1000002",codeAndAmount,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",400,"创建入厂二维码相同的数据"},
 
-                {"1000002",codesAndAmountsM,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",200,"创建入厂多个二维码的数据"},
-                {"1000002",codesAndAmountsT,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",200,"创建入厂物料使用转换单位的数据"},
-                {"1000002",codesAndAmountsZ,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",400,"创建入厂二维码数量为0的数据"},
-                {"1000002",codesAndAmountsN,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",400,"创建没有入厂二维码的数据"},
-                {"1000002",codesAndAmounts,mfgBatches,null,new Date(),"00000001",originPlace,"入厂备注信息",400,"创建没有入厂仓位的数据"},
+                {"1000002",codeAndAmountM,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",200,"创建入厂多个二维码的数据"},
+                {"1000002",codeAndAmountT,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",200,"创建入厂物料使用转换单位的数据"},
+                {"1000002",codeAndAmountZ,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",400,"创建入厂二维码数量为0的数据"},
+                {"1000002",codeAndAmountN,mfgBatches,Environment.storageId,new Date(),"00000001",originPlace,"入厂备注信息",400,"创建没有入厂二维码的数据"},
+                {"1000002",codeAndAmount,mfgBatches,null,new Date(),"00000001",originPlace,"入厂备注信息",400,"创建没有入厂仓位的数据"},
 
 
-//                {"1000002",codesAndAmountsO,mfgBatchesN,Environment.storageId,"","",originPlaceN,"",200,"创建没有非必填项，只有必填项的入厂数据"},
+//                {"1000002",codeAndAmountO,mfgBatchesN,Environment.storageId,"","",originPlaceN,"",200,"创建没有非必填项，只有必填项的入厂数据"},
 
 
 

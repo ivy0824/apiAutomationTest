@@ -4,8 +4,8 @@ import Params.materialLot.TransferParams;
 import config.Environment;
 import object.materialLot.Transfer;
 import org.testng.annotations.Test;
-import request.RequestObject;
-import java.util.ArrayList;
+import utils.common.RequestObject;
+
 import java.util.HashMap;
 
 public class TestTransfer {

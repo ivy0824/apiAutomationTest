@@ -30,10 +30,10 @@
 //                .filter(new Filter() {
 //                    public Response filter(FilterableRequestSpecification req, FilterableResponseSpecification res, FilterContext ctx) {
 //                        //code
-//                        //fliter request
+//                        //fliter rest_assured
 //                        System.out.println(req.getURI());
 //                        System.out.println(res);
-//                        //request real
+//                        //rest_assured real
 //                        Response resNew = ctx.next(req, res);
 //                        //response real
 //                        //filter response

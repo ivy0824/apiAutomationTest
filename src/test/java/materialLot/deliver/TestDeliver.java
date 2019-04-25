@@ -4,7 +4,7 @@ import Params.materialLot.DeliverParams;
 import config.Environment;
 import object.materialLot.Deliver;
 import org.testng.annotations.Test;
-import request.RequestObject;
+import utils.common.RequestObject;
 import java.util.HashMap;
 
 public class TestDeliver {

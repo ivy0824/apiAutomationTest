@@ -1,7 +1,7 @@
 package utils.def;
 
 import config.Environment;
-import request.RequestObject;
+import utils.common.RequestObject;
 
 import java.util.HashMap;
 
@@ -21,7 +21,7 @@ public class UnitMethod {
         return unitResponse;
     }
 
-    public static void createUnit(String name,String jsonPath){
+    public static void createUnit(String name){
         HashMap<String, String> body = new HashMap<String, String>();
         body.put("name", "单位" + name);
         HashMap<String, String> params = new HashMap<String, String>();

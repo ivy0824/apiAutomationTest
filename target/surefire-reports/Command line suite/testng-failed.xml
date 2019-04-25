@@ -3,21 +3,55 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test thread-count="5" verbose="0" name="Command line test(failed)">
     <classes>
+      <class name="materialLot.admit.TestAdmit">
+        <methods>
+          <include name="testAdmitPost" invocation-numbers="1 2 3 4 5 6"/>
+        </methods>
+      </class> <!-- materialLot.admit.TestAdmit -->
+      <class name="materialLot.transfer.TestTransfer">
+        <methods>
+          <include name="testTransferPost"/>
+        </methods>
+      </class> <!-- materialLot.transfer.TestTransfer -->
       <class name="def.warehouse.TestStorage1">
         <methods>
           <include name="testStorage1Post"/>
         </methods>
       </class> <!-- def.warehouse.TestStorage1 -->
+      <class name="materialLot.adjust.TestAdjust">
+        <methods>
+          <include name="testAdjustPost"/>
+        </methods>
+      </class> <!-- materialLot.adjust.TestAdjust -->
+      <class name="def.material.TestMaterial">
+        <methods>
+          <include name="testMaterialPost" invocation-numbers="2"/>
+          <include name="testMaterialPost1" invocation-numbers="0 1"/>
+          <include name="testMaterialPost3" invocation-numbers="2"/>
+          <include name="getUnitId"/>
+          <include name="testMaterialStatus" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- def.material.TestMaterial -->
+      <class name="materialLot.admit.TestPurchaseAdmit">
+        <methods>
+          <include name="testAdmitPost" invocation-numbers="0 2 3 4 5"/>
+        </methods>
+      </class> <!-- materialLot.admit.TestPurchaseAdmit -->
+      <class name="materialLot.aplit.TestSplit">
+        <methods>
+          <include name="testSplitPost"/>
+        </methods>
+      </class> <!-- materialLot.aplit.TestSplit -->
       <class name="def.warehouse.TestStorage2">
         <methods>
           <include name="testStorage2Post"/>
         </methods>
       </class> <!-- def.warehouse.TestStorage2 -->
-      <class name="def.eBOM.TestEBOM">
+      <class name="materialLot.deliver.TestDeliver">
         <methods>
-          <include name="testEBOMPost1" invocation-numbers="0"/>
+          <include name="testDelivertPost"/>
         </methods>
-      </class> <!-- def.eBOM.TestEBOM -->
+      </class> <!-- materialLot.deliver.TestDeliver -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

@@ -3,7 +3,7 @@ package def.eBOM;
 import config.Environment;
 import object.def.EBOM;
 import Params.def.EBOMParams;
-import request.RequestObject;
+import utils.common.RequestObject;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;

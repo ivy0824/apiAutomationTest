@@ -1,8 +1,9 @@
 package def.unit;
 
 import Params.def.UnitParams;
-import config.Environment;
-import request.RequestObject;
+import blacklake.def.Unit;
+import io.restassured.response.ValidatableResponse;
+import utils.common.RequestObject;
 import org.testng.annotations.Test;
 
 
@@ -16,16 +17,12 @@ public class TestUnit {
         System.out.println("----------" + msg + "----------");
         body.put("name",name);
         body.put("desc",des);
-        HashMap<String,String> params=new HashMap<String, String>();
-        RequestObject.getStatus(RequestObject.testPost(Environment.server_def,"/v1/unit",body,params),statusCode);
+        ValidatableResponse response = Unit.createUnit(name,des);
+        RequestObject.getStatus(response, statusCode);
+        RequestObject.getResponseMessage(response,"data.name",name);
+
 
     }
 
-//    @Test
-//    public void testUnitGet(){
-//        HashMap<String,String> params=new HashMap<String, String>();
-////        RequestObject.getStatus(RequestObject.testGet("unit",params),200);
-//        RequestObject.getResponseMessage(RequestObject.testGet(Environment.server_def,"/v1/unit",params),"data.name", "单位8248");
-//    }
 
 }

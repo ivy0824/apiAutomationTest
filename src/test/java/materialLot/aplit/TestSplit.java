@@ -5,7 +5,7 @@ import config.Environment;
 import object.materialLot.Split;
 import object.materialLot.Targets;
 import org.testng.annotations.Test;
-import request.RequestObject;
+import utils.common.RequestObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 

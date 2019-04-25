@@ -1,7 +1,7 @@
 package Params.materialLot;
 
 import config.Environment;
-import object.materialLot.CodesAndAmounts;
+import object.materialLot.CodeAndAmount;
 import object.materialLot.MfgBatches;
 import org.testng.annotations.DataProvider;
 import utils.materialLot.AdmitMethod;
@@ -31,9 +31,9 @@ public class AdjustParams {
         String qcCode = (Math.random() * 100000) + "";
 
         //创建入厂的：数量，二维码，单位 数据
-        ArrayList<CodesAndAmounts> codesAndAmounts = new ArrayList<CodesAndAmounts>();
-        CodesAndAmounts codesAndAmounts01 = new CodesAndAmounts("100", qcCode, "瓶");
-        codesAndAmounts.add(codesAndAmounts01);
+        ArrayList<CodeAndAmount> codeAndAmount = new ArrayList<CodeAndAmount>();
+        CodeAndAmount codeAndAmount01 = new CodeAndAmount(100.0,"瓶", qcCode );
+        codeAndAmount.add(codeAndAmount01);
 
         //创建供应商数据
         ArrayList<MfgBatches> mfgBatches = new ArrayList<MfgBatches>();
@@ -43,7 +43,7 @@ public class AdjustParams {
         mfgBatches.add(mfgBatches2);
 
         //创建入厂物料并获取返回的物料单元值
-        int materialLotId = AdmitMethod.admit("1000001", codesAndAmounts, Environment.storageId).get(qcCode);
+        int materialLotId = AdmitMethod.admit("1000001", codeAndAmount, Environment.storageId).get(qcCode);
         System.out.println(materialLotId);
 
         return new Object[][]{
