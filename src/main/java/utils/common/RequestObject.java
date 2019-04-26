@@ -44,7 +44,7 @@ public class RequestObject{
      * @param path
      * @param body
      */
-    public static ValidatableResponse postRequest(String server, String path, Object body){
+    public  ValidatableResponse postRequest(String server, String path, Object body){
 
         return given()
                 .contentType("application/json")
@@ -58,6 +58,24 @@ public class RequestObject{
                 .log().all();
     }
 
+    /**
+     * put请求方法
+     * @param path
+     * @param body
+     */
+    public static ValidatableResponse putRequest(String server, String path, Object body){
+
+        return given()
+                .contentType("application/json")
+                .header("X-Org-Id", orgId1)
+                .header("X-User-Id",userId1)
+                .header("X-User-Name",userName1)
+                .body(body)
+                .log().all()
+                .when().put("http://"+server+url + path)
+                .then()
+                .log().all();
+    }
 
 
     /**get请求方法
